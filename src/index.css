@@ -6,6 +6,33 @@ body{
     background-color: #2B2B2B;
 }
 
-/* .Button{
-    background-color: #A259FF;
-} */
+.transition-transform{
+    transition: transform 0.3s ease-in-out;
+}
+
+@media(max-width : 1024px){
+    .NavbarRes{
+        font-size: 14px;
+        gap:10;
+    }
+    .button{
+        width: 7rem;
+        font-size: small;
+        height: 2.5rem;
+    }
+}
+
+@media(max-width : 950px){
+    .NavbarRes{
+        font-size: 14px;
+        gap: 2rem;
+    }
+    .button{
+        width: 7rem;
+        font-size: small;
+        height: 2.5rem;
+    }
+    .gap{
+        gap: 2rem;
+    }
+}
