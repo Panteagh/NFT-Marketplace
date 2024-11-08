@@ -21,7 +21,9 @@ function Navbar() {
           </span>
         </div>
       </Link>
+      
       <button className="text-white block md:hidden" onclick={toggelMenu}>
+
         <svg
           width="24"
           height="24"
@@ -49,19 +51,30 @@ function Navbar() {
           />
         </svg>
       </button>
-      <div className={`${isOpen ? "block" : "hidden"} md:flex justify-center items-center gap-16 gap transition-transform`} >
+      <div
+
+        className={`${
+          isOpen ? "block" : "hidden"
+        } md:flex justify-center items-center gap-16 gap transition-transform`}
+      >
+
         <ul className="flex justify-center items-center list-none gap-16 font-medium text-base text-white font-serif NavbarRes">
+
           <Link to="/Marketplace">
             <li>Marketplace</li>
           </Link>
+
           <Link to="/Rankings">
             <li>Rankings</li>
           </Link>
+
           <Link to="/Wallet">
             <li>Connect a wallet</li>
           </Link>
+
         </ul>
-        <Button className="mx-6" svg={<GoPerson  />} label="Sign Up" size ="36px"/>
+
+        <Button style="w-32" icon={<GoPerson />} label="Sign Up" />
       </div>
     </div>
   );

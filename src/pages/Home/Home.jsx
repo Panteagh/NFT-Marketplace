@@ -8,7 +8,7 @@ function Home() {
     <div>
       <Navbar />
       <Container>
-      
+        <Header /> 
       </Container>
     </div>
   )
