@@ -35,4 +35,13 @@ body{
     .gap{
         gap: 2rem;
     }
+    .header{
+        margin-left: 31px;
+    }
+    .headerh1{
+        font-size: 2rem;
+    }
+    .headerP{
+        font-size: 1rem;
+    }
 }

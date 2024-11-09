@@ -5,35 +5,35 @@ import assets from "../../assets/HeaderGif/hesder.gif";
 
 function Header() {
   return (
-    <div className="flex basis-auto  mt-20">
-      <div className="w-5/12">
-        <h1 className=" font-bold text-white text-6xl font-sans leading-tight">
-          Discover <br /> digital art & <br /> Collect NFTs
+    <div className=" flex items-center max-md:flex-col-reverse basis-auto mt-20 lg:ml-40 gap-7 max-md:w-11/12 header ">
+      <div className="lg:w-5/12">
+        <h1 className="headerh1 font-bold text-white lg:text-6xl md:text-4xl max-md:text-2xl font-sans leading-tight lg:w-96">
+          Discover digital art & Collect NFTs
         </h1>
-        <p className="text-white font-sans text-2xl mt-6 mb-10 font-normal leading-snug">
+        <p className="text-white font-sans lg:text-2xl mt-6 mb-10 font-normal leading-snug md:text-lg headerP">
           NFT marketplace UI created with Anima for Figma.
-          <br /> Collect, buy and sell art from more than 20k NFT artists.
+           Collect, buy and sell art from more than 20k NFT artists.
         </p>
-        <Button style="w-56" icon={<PiRocketLaunch />} label="Get Started" />
-        <div className="flex justify-between text-white mt-12">
+        <Button style="w-56 max-md:w-full" icon={<PiRocketLaunch />} label="Get Started" />
+        <div className="flex justify-between text-white mt-12 ">
           
           <div >
-            <p className="font-bold text-3xl font-mono">240k+ </p>
-            <p className="text-xl font-medium font-sans ">Total Sale</p>
+            <p className="font-bold text-3xl font-mono max-md:text-2xl ">240k+ </p>
+            <p className="text-xl font-medium font-sans md:text-lg max-md:text-base">Total Sale</p>
             </div>
 
           <div>
-            <p className="font-bold text-3xl font-mono">100k+</p>
-            <p className="text-xl font-medium font-sans ">Auctions</p>
+            <p className="font-bold text-3xl font-mono max-md:text-2xl  ">100k+</p>
+            <p className="text-xl font-medium font-sans md:text-lg max-md:text-base">Auctions</p>
           </div>
           <div> 
-            <p className="font-bold text-3xl font-mono">240k+</p>
-            <p className="text-xl font-medium font-sans ">Artists</p>
+            <p className="font-bold text-3xl font-mono max-md:text-2xl ">240k+</p>
+            <p className="text-xl font-medium font-sans md:text-lg max-md:text-base">Artists</p>
           </div>
         </div>
       </div>
-      <div className="flex w-2/5">
-        <img src={assets} alt="" />
+      <div className="w-3/5 max-md:w-3/4 ">
+        <img src={assets} alt="Nft Market" />
       </div>
     </div>
   );
