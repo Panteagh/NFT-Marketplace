@@ -35,8 +35,8 @@ body{
     .gap{
         gap: 2rem;
     }
-    .header{
-        margin-left: 31px;
+    .space{
+        margin: auto;
     }
     .headerh1{
         font-size: 2rem;
