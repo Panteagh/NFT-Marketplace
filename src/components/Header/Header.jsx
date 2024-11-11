@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button/Button";
 import { PiRocketLaunch } from "react-icons/pi";
 import assets from "../../assets/HeaderGif/hesder.gif";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -14,7 +15,9 @@ function Header() {
           NFT marketplace UI created with Anima for Figma.
            Collect, buy and sell art from more than 20k NFT artists.
         </p>
+        <Link to="/login">
         <Button style="w-56 max-md:w-full" icon={<PiRocketLaunch />} label="Get Started" />
+        </Link>
         <div className="flex justify-between text-white mt-12 ">
           
           <div >

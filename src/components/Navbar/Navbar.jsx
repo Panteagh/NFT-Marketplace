@@ -70,8 +70,9 @@ function Navbar() {
           </Link>
 
         </ul>
-
+        <Link to="/login">
         <Button style="w-32" icon={<GoPerson />} label="Sign Up" />
+        </Link>
       </div>
     </div>
   );

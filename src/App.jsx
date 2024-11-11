@@ -5,6 +5,7 @@ import Marketplace from './pages/Marketplace/Marketplace'
 import Rankings from './pages/Ranking/Rankings'
 import Wallet from './pages/Wallet/Wallet'
 import Layout from './components/Layout/Layout'
+import Login from './pages/Login/login'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/Marketplace' element={<Marketplace />}></Route>
         <Route path='/Rankings' element={<Rankings />}></Route>
         <Route path='/Wallet' element={<Wallet />}></Route>
+        <Route path='/login' element={<Login />}></Route>
       </Routes>
     </Layout>
     </>

@@ -10,8 +10,8 @@ function Footer() {
     <div className="bg-[#3B3B3B] h-auto ">
       <Container>
         <div className="lg:flex max-md:flex-col max-md:text-left justify-between lg:mx-36 text-[#858584] space font-sans">
-          <div className="mt-11 max-md:mt-11">
-            <div className="flex items-center gap-3 max-md:text-xs">
+          <div >
+            <div className="flex items-center gap-3 max-md:text-xs mt-11 max-md:mt-11">
               <BsShopWindow color="#A259FF" size={32} />
               <span className="font-mono text-xl font-bold text-white max-md:text-sm">
                 NFT Marketplace
@@ -50,7 +50,7 @@ function Footer() {
               Get exclusive promotions & updates straight to your inbox.
             </p>
 
-            <Button style="lg:w-44 mt-6 max-md:w-full" label="Subscribe" />
+            <Button style="lg:w-44 mt-6 md:w-full " label="Subscribe" />
           </div>
         </div>
       </Container>
