@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input({label , icon}) {
+function Input({label , icon , button , style}) {
   return (
     <div>
       <div className="[--clr:#1f1f1f] dark:[--clr:#999999] relative flex flex-row items-center mt-7">
@@ -25,26 +25,9 @@ function Input({label , icon}) {
         <span className="pointer-events-none absolute z-[+1] left-0 top-0 bottom-0 flex items-center justify-center size-[40px] text-[--clr] peer-focus-visible:hidden peer-[:not(:placeholder-shown)]:hidden">
           {icon}
         </span>
-        <div className="group w-[40px] absolute top-0 bottom-0 right-0 flex items-center justify-center text-[--clr] peer-focus-visible:text-purple-500 peer-focus-visible:[&amp;_span]:border-teal-600">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1rem"
-            height="1rem"
-            stroke-linejoin="round"
-            stroke-linecap="round"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            fill="none"
-            stroke="currentColor"
-          >
-            <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
-            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-            <path d="M12 8v4"></path>
-            <path d="M12 16h.01"></path>
-          </svg>
-          <span className="text-sm absolute cursor-default select-none rounded-2xl px-1.5 opacity-0 right-0 -z-10 transition-all duration-300 group-hover:opacity-100 group-hover:-translate-y-[calc(100%+18px)]">
-            Required!
-          </span>
+        <div className={`group ${style} absolute top-0 bottom-0 right-0 flex items-center justify-center text-[--clr] peer-focus-visible:text-purple-500 peer-focus-visible:[&amp;_span]:border-teal-600`}>
+          {button}
+         
         </div>
       </div>
     </div>

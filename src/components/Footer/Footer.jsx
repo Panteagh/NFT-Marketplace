@@ -4,6 +4,7 @@ import Links from "../links/Links";
 import { Link } from "react-router-dom";
 import Container from "../container/Container";
 import Button from "../Button/Button";
+import Input from "../inputs/Input";
 
 function Footer() {
   return (
@@ -49,8 +50,11 @@ function Footer() {
             <p className="lg:w-56 mt-6  ">
               Get exclusive promotions & updates straight to your inbox.
             </p>
+            <div className="flex w-full ">
+            <Input style="w-[179px relative] " button={<Button style='h-[40px] w-[179px] right-0 rounded-2xl' label="Subscribe" />}/>
+            
 
-            <Button style="lg:w-44 mt-6 md:w-full " label="Subscribe" />
+            </div>
           </div>
         </div>
       </Container>
