@@ -51,7 +51,7 @@ function Footer() {
               Get exclusive promotions & updates straight to your inbox.
             </p>
             <div className="flex w-full ">
-            <Input style="w-[179px relative] " button={<Button style='h-[40px] w-[179px] right-0 rounded-2xl' label="Subscribe" />}/>
+            <Input style="w-[179px relative] " button={<Button style='h-[40px] w-[100px] right-0 rounded-2xl' label="Subscribe" />}/>
             
 
             </div>

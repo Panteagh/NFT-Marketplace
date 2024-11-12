@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
 import Container from '../../components/container/Container'
 import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
+import TrandingCollection from '../../components/TrandingCollection/TrandingCollection'
 
 function Home() {
   return (
     <div>
       <Container>
         <Header /> 
+        <TrandingCollection />
       </Container>
     </div>
   )

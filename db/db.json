@@ -1,0 +1,65 @@
+{
+  "artistAvatars": [
+    {
+      "id": "1",
+      "name": "Keepitreal",
+      "Avatar": "src/assets/Avatars/Keepitreal.png"
+    },
+    {
+      "id": "2",
+      "name": "DigiLab",
+      "Avatar": "src/assets/Avatars/DigiLab.png"
+    },
+    {
+      "id": "3",
+      "name": "GravityOne",
+      "Avatar": "src/assets/Avatars/GravityOne.png"
+    },
+    {
+      "id": "4",
+      "name": "Juanie",
+      "Avatar": "src/assets/Avatars/Juanie.png"
+    },
+    {
+      "id": "5",
+      "name": "BlueWhale",
+      "Avatar": "src/assets/Avatars/BlueWhale.png"
+    },
+    {
+      "id": "6",
+      "name": "mrFox",
+      "Avatar": "src/assets/Avatars/mrFox.png"
+    },
+    {
+      "id": "7",
+      "name": "Shroomie",
+      "Avatar": "src/assets/Avatars/Shroomie.png"
+    },
+    {
+      "id": "8",
+      "name": "robotica",
+      "Avatar": "src/assets/Avatars/robotica.png"
+    },
+    {
+      "id": "9",
+      "name": "RustyRobot",
+      "Avatar": "src/assets/Avatars/RustyRobot.png"
+    },
+    {
+      "id": "10",
+      "name": "animakid",
+      "Avatar": "src/assets/Avatars/animakid.png"
+    },
+    {
+      "id": "11",
+      "name": "Dotgu",
+      "Avatar": "src/assets/Avatars/Dotgu.png"
+    },
+    {
+      "id": "12",
+      "name": "Ghiblier",
+      "Avatar": "src/assets/Avatars/Ghiblier.png"
+    }
+  ]
+
+}
