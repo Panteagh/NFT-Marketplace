@@ -18,7 +18,7 @@ function TrandingCollection() {
         Trending Collection
       </h2>
       <p className="text-white lg:text-2xl max-md:text-lg font-sans mt-4">Checkout our weekly updated trending collection.</p>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 justify-between  mx-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 justify-between mx-auto">
 
       <Collection
         trandNFT={PsychoDog}
