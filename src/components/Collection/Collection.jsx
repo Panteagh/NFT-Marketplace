@@ -17,19 +17,19 @@ function Collection({
 
         <div>
           <img
-            className="rounded-3xl h-[330px] w-[330px] hover:scale-110 duration-700"
+            className="rounded-3xl h-[330px] w-[330px] hover:scale-95 duration-700"
             src={trandNFT}
           />
         </div>
 
         <div className=" h-[100px] flex justify-between mt-5 mb-3">
           <img
-            className="w-[100px] rounded-3xl hover:scale-110 duration-700"
+            className="w-[100px] rounded-3xl hover:scale-95 duration-700"
             src={subtrandNFT1}
           />
 
           <img
-            className="w-[100px] rounded-3xl hover:scale-110 duration-700 "
+            className="w-[100px] rounded-3xl hover:scale-95 duration-700 "
             src={subtrandNFT2}
           />
 
