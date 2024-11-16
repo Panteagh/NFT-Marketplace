@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import BorderedButton from "../BorderedButton/BorderedButton";
-import { getCreators } from "../../assets/services/api";
+import { getCreators } from "../services/api";
 import ArtistCard from "../ArtistCard/ArtistCard";
 import { Link } from "react-router-dom";
 import SectionHeadline from "../SectionHeadline/SectionHeadline";

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import HeaderPage from '../../components/headerPages/HeaderPage'
 import ArtistRankCard from '../../components/ArtistRankCard/ArtistRankCard'
-import { getCreators } from '../../assets/services/api'
+import { getCreators } from '../../components/services/api'
 import { Link } from 'react-router-dom'
 import Container from '../../components/container/Container'
 
@@ -14,8 +14,6 @@ function Rankings() {
     })
   },[])
 
-  
-  
   return (
     <div>
       <Container
