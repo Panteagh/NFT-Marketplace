@@ -10,7 +10,7 @@ import HeaderPage from "../../components/headerPages/HeaderPage";
 function Login() {
   return (
     <div className="flex gap-14 max-md:flex-col mx-auto">
-      <div className="w-6/12 max-md:w-full ">
+      <div >
         <img
           className="w-full max-md:w-full max-md:h-56 object-cover"
           src={img}

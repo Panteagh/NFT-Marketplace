@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className=" flex items-center max-md:flex-col-reverse basis-auto mt-20 lg:ml-40 gap-7 max-md:w-11/12 space ">
+    <div className=" flex items-center max-md:flex-col-reverse basis-auto mt-20 lg:ml-40 gap-7 space ">
       <div className="lg:w-5/12">
       
         <h1 className="headerh1 font-bold text-white lg:text-6xl md:text-4xl max-md:text-2xl font-sans leading-tight lg:w-96">

@@ -12,7 +12,7 @@ import DancingRobot0356 from "../../assets/images/DancingRobot0356.png";
 
 function TrandingCollection() {
   return (
-    <div className="lg:mx-36 mt-20">
+    <div className="lg:mx-36 mt-20 ">
       <SectionHeadline
         sectionLabel="Trending Collection"
         description="Checkout our weekly updated trending collection."

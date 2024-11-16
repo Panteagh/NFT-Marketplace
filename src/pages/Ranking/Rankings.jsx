@@ -3,6 +3,7 @@ import HeaderPage from '../../components/headerPages/HeaderPage'
 import ArtistRankCard from '../../components/ArtistRankCard/ArtistRankCard'
 import { getCreators } from '../../assets/services/api'
 import { Link } from 'react-router-dom'
+import Container from '../../components/container/Container'
 
 function Rankings() {
   const [artistRank , setArtistRank] = useState([])
@@ -16,11 +17,14 @@ function Rankings() {
   
   
   return (
-    <div className='mx-44'>
-     <HeaderPage 
+    <div>
+      <Container
+      >
+        <HeaderPage 
      PageHeader="Top Creators" 
      description="Check out top ranking NFT artists on the NFT Marketplace."
      />
+
      <div> {/* Tab */}</div>
      <div className='bg-transparent border-[#858584]/50 rounded-3xl border-[1px] h-12 mt-9 '>
 
@@ -43,6 +47,8 @@ function Rankings() {
         ))
       }
      </div>
+      </Container>
+     
     </div>
   )
 }
