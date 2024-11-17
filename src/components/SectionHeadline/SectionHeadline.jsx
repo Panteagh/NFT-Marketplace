@@ -7,7 +7,7 @@ function SectionHeadline({ sectionLabel, description }) {
         {sectionLabel}
       </h2>
 
-      <p className="text-white lg:text-2xl max-md:text-lg font-sans mt-4">
+      <p className="text-white lg:text-xl max-md:text-lg font-sans mt-4">
         {description}
       </p>
     </div>

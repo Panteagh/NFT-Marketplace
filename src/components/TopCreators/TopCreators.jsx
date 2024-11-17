@@ -24,14 +24,15 @@ function TopCreators() {
           sectionLabel="Top creators"
           description="Checkout Top Rated Creators on the NFT Marketplace"
         />
-        
+        <div className=" max-md:hidden">
         <Link to="/Rankings">
           <BorderedButton
-            style="w-[247px] mt-8"
+            style="w-[247px] mt-8 "
             icon={<HiOutlineRocketLaunch color="#A259FF" />}
             label="View Rankings"
           />
         </Link>
+        </div>
       </div>
 
       <div className="  grid lg:grid-cols-4 md:grid-cols-2 max-md:grid-cols-1 justify-between mt-4">

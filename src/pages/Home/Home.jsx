@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header'
 import TrandingCollection from '../../components/TrandingCollection/TrandingCollection'
 import TopCreators from '../../components/TopCreators/TopCreators'
 import BrowseCategoriesSection from '../../components/BrowseCategoriesSection/BrowseCategoriesSection'
+import DiscoverMoreNFTsSection from '../../components/DiscoverMoreNFTsSection/DiscoverMoreNFTsSection'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <TrandingCollection />
         <TopCreators />
         <BrowseCategoriesSection />
+        <DiscoverMoreNFTsSection />
       </Container>
     </div>
   )
