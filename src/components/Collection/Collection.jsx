@@ -43,8 +43,8 @@ function Collection({
           {nameCollection}
         </span>
 
-        <div>
-          <div>{/*artist Avatar */}</div>
+        <div className="flex gap-3">
+          {Avatar}
           <span className="text-white text-md font-sans">
             {artis}
           </span>

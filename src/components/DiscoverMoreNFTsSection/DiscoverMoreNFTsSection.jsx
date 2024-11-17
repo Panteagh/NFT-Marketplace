@@ -4,6 +4,13 @@ import NFTCard from "../NFTCard/NFTCard";
 import BorderedButton from "../BorderedButton/BorderedButton";
 import { IoEyeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import DistantGalaxy from "../../assets/images/DistantGalaxy.png"
+import LifeOnEdena from "../../assets/images/LifeOnEdena.png"
+import AstroFiction from "../../assets/images/AstroFiction.png"
+import DigiLab from "../../assets/Avatars/DigiLab.png"
+import Keepitreal from "../../assets/Avatars/Keepitreal.png"
+import Shroomie from "../../assets/Avatars/Shroomie.png"
+import Avatar from "../Avatar/Avatar";
 
 function DiscoverMoreNFTsSection() {
   return (
@@ -13,19 +20,19 @@ function DiscoverMoreNFTsSection() {
         sectionLabel="Discover More NFTs"
         description="Explore new trending NFTs"
       />
-    <BorderedButton style="w-[167px] h-[60px]" icon={<IoEyeOutline color="#A259FF"/>} label="See All"/>
+    <BorderedButton style="w-[167px] h-[60px] max-sm:hidden" icon={<IoEyeOutline color="#A259FF"/>} label="See All"/>
         </div>
       <div className="mt-12 grid grid-cols-3 max-lg:grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1" >
         <Link to="/Marketplace" >
-        <NFTCard />
+        <NFTCard NFTimg={DistantGalaxy} avatr={<Avatar img={DigiLab}/>} />
         </Link>
 
         <Link to="/Marketplace">
-        <NFTCard />
+        <NFTCard NFTimg={LifeOnEdena} avatr={<Avatar img={Keepitreal}/>}/>
         </Link>
 
         <Link to="/Marketplace">
-        <NFTCard style="max-md:hidden" />
+        <NFTCard style="max-md:hidden" NFTimg={AstroFiction} avatr={<Avatar img={Shroomie}/>}/>
         </Link>
       </div>
     </div>

@@ -9,6 +9,11 @@ import MagicMushroom0325 from "../../assets/images/MagicMushroom0325.png";
 import DancingRobot0512 from "../../assets/images/DancingRobot0512.png";
 import DancingRobot0375 from "../../assets/images/DancingRobot0375.png";
 import DancingRobot0356 from "../../assets/images/DancingRobot0356.png";
+import mrFox from "../../assets/Avatars/mrFox.png";
+import Shroomie from "../../assets/Avatars/Shroomie.png";
+import BlueWhale from "../../assets/Avatars/BlueWhale.png";
+
+import Avatar from "../Avatar/Avatar";
 
 function TrandingCollection() {
   return (
@@ -24,7 +29,7 @@ function TrandingCollection() {
           subtrandNFT1={CatFromFuture}
           subtrandNFT2={DesignerBear}
           nameCollection="DSGN Animals"
-          Avatar=""
+          Avatar={<Avatar img={mrFox}/>}
           artis="MrFox"
         />
         <Collection
@@ -33,7 +38,7 @@ function TrandingCollection() {
           subtrandNFT1={MagicMushroom0325}
           subtrandNFT2={MagicMushroom0324}
           nameCollection="Magic Mushrooms"
-          Avatar=""
+          Avatar={<Avatar img={Shroomie}/>}
           artis="Shroomie"
         />
         <Collection
@@ -42,7 +47,7 @@ function TrandingCollection() {
           subtrandNFT1={DancingRobot0375}
           subtrandNFT2={DancingRobot0356}
           nameCollection="Disco Machines"
-          Avatar=""
+          Avatar={<Avatar img={BlueWhale}/>}
           artis="BeKind2Robots"
         />
       </div>

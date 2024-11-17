@@ -1,17 +1,16 @@
 import React from "react";
-import img from '../../assets/images/CatFromFuture.png'
 
-function NFTCard({style}) {
+function NFTCard({style , NFTimg , avatr}) {
   return (
-    <div className={`${style} lg:w-[330px] lg:h-[469px] bg-[#3B3B3B] rounded-3xl`}> 
+    <div className={`${style} lg:w-[330px] lg:h-[469px] bg-[#3B3B3B] rounded-3xl hover:scale-95 duration-700`}> 
       <div className="lg:h-[295px]">
-        <img src={img} alt="" />
+        <img src={NFTimg} alt="" />
       </div>
 
       <div className="mx-7 mt-3 md:pb-3 max-md:pb-3">
         <h2 className="font-semibold text-white text-xl max-md:text-lg font-sans">Life On Edena</h2>
         <div className="flex gap-4 items-center">
-            <img src="" alt="" />
+            {avatr}
             <h3 className="text-white font-mono mt-2 max-md:text-sm ">NebulaKid</h3>
         </div>
 
