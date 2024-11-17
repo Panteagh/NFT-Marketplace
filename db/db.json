@@ -60,6 +60,68 @@
       "name": "Ghiblier",
       "Avatar": "src/assets/Avatars/Ghiblier.png"
     }
+  ],
+  "NFTs": [
+    {
+      "id": "1",
+      "name": "ColorfulDog0356",
+      "Avatar": "src/assets/murketPlaceNFTs/ColorfulDog0356.png"
+    },
+    {
+      "id": "2",
+      "name": "MagicMushroom0324",
+      "Avatar": "src/assets/murketPlaceNFTs/MagicMushroom0324.png"
+    },
+    {
+      "id": "3",
+      "name": "GravityOne",
+      "Avatar": "src/assets/murketPlaceNFTs/AstroFiction.png"
+    },
+    {
+      "id": "4",
+      "name": "Juanie",
+      "Avatar": "src/assets/murketPlaceNFTs/CatFromFuture.png"
+    },
+    {
+      "id": "5",
+      "name": "BlueWhale",
+      "Avatar": "src/assets/murketPlaceNFTs/CherryBlossomGirl035.png"
+    },
+    {
+      "id": "6",
+      "name": "mrFox",
+      "Avatar": "src/assets/murketPlaceNFTs/Sunset0Dimension.png"
+    },
+    {
+      "id": "7",
+      "name": "Shroomie",
+      "Avatar": "src/assets/murketPlaceNFTs/DancingRobot0375.png"
+    },
+    {
+      "id": "8",
+      "name": "robotica",
+      "Avatar": "src/assets/murketPlaceNFTs/DesertWalk.png"
+    },
+    {
+      "id": "9",
+      "name": "RustyRobot",
+      "Avatar": "src/assets/murketPlaceNFTs/DesignerBear.png"
+    },
+    {
+      "id": "10",
+      "name": "animakid",
+      "Avatar": "src/assets/murketPlaceNFTs/HappyRobot024.png"
+    },
+    {
+      "id": "11",
+      "name": "Dotgu",
+      "Avatar": "src/assets/murketPlaceNFTs/IceCreamApe0324.png"
+    },
+    {
+      "id": "12",
+      "name": "Ghiblier",
+      "Avatar": "src/assets/murketPlaceNFTs/LifeOnEdena.png"
+    }
   ]
 
 }
