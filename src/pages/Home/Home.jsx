@@ -5,6 +5,8 @@ import TrandingCollection from '../../components/TrandingCollection/TrandingColl
 import TopCreators from '../../components/TopCreators/TopCreators'
 import BrowseCategoriesSection from '../../components/BrowseCategoriesSection/BrowseCategoriesSection'
 import DiscoverMoreNFTsSection from '../../components/DiscoverMoreNFTsSection/DiscoverMoreNFTsSection'
+import NFTHighlightSection from '../../components/NFTHighlightSection/NFTHighlightSection'
+import HowitworksSection from '../../components/HowitworksSection/HowitworksSection'
 
 function Home() {
   return (
@@ -16,6 +18,10 @@ function Home() {
         <BrowseCategoriesSection />
         <DiscoverMoreNFTsSection />
       </Container>
+        <NFTHighlightSection />
+        <Container>
+        <HowitworksSection/>
+        </Container>
     </div>
   )
 }

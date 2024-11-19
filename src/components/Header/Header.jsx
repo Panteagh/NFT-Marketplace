@@ -20,7 +20,7 @@ function Header() {
 
         <Link to="/login">
           <Button
-            style="w-56 max-md:w-full"
+            style="w-56 max-md:w-full text-white"
             icon={<PiRocketLaunch />}
             label="Get Started"
           />

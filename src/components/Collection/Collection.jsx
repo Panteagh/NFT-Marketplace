@@ -34,7 +34,7 @@ function Collection({
           />
 
           <Button
-            style="w-[100px] h-full md:h-full max-md:h-full max-lg:font-bold max-lg:text-xlg font-mono"
+            style="w-[100px] h-full md:h-full max-md:h-full max-lg:font-bold max-lg:text-xlg font-mono text-white"
             label="1025+"
           />
         </div>
