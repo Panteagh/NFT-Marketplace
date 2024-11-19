@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input({ label, icon, button, style,placeholder  }) {
+function Input({ label, icon, button, style, placeholder  }) {
   return (
     <div>
       <div className="[--clr:#1f1f1f] dark:[--clr:#999999] relative flex flex-row items-center mt-7">

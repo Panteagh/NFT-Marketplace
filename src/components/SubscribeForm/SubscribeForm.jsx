@@ -3,17 +3,17 @@ import React from 'react'
 function SubscribeForm() {
   return (
     <div>
-        <Input
+       <div className="flex max-sm:flex-col w-full justify-center items-center relative ">
+              <Input
                 style="w-[179px relative] "
                 placeholder="Enter your email here"
-                button={
-                  <Button
-                    style="h-[40px] w-[100px] right-0 rounded-2xl taxt-white"
-                    label="Subscribe"
-                    
-                  />
-                }
+                
               />
+                  <Button
+                    style="h-[40px] w-[100px] right-0 rounded-2xl text-white absolute top-7 left-44  "
+                    label="Subscribe"
+                  />
+            </div>
     </div>
   )
 }

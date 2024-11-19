@@ -14,8 +14,7 @@ function SubscribeWidget() {
           </h2>
           <p className="text-white text-2xl mt-7">
             Get exclusive promotions & updates straight to your inbox.
-          </p>
-          
+          </p>     
         </div>
       </div>
     </div>
