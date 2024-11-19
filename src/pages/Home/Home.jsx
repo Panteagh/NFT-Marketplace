@@ -7,6 +7,7 @@ import BrowseCategoriesSection from '../../components/BrowseCategoriesSection/Br
 import DiscoverMoreNFTsSection from '../../components/DiscoverMoreNFTsSection/DiscoverMoreNFTsSection'
 import NFTHighlightSection from '../../components/NFTHighlightSection/NFTHighlightSection'
 import HowitworksSection from '../../components/HowitworksSection/HowitworksSection'
+import SubscribeWidget from '../../components/Subscribewidget/SubscribeWidget'
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         <NFTHighlightSection />
         <Container>
         <HowitworksSection/>
+        <SubscribeWidget />
         </Container>
     </div>
   )

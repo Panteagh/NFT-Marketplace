@@ -3,7 +3,7 @@ import React from "react";
 
 function InfoCard({img , label , description}) {
   return (
-    <div className="bg-[#3B3B3B] rounded-3xl lg:w-[330px] lg:h-[439px] md:w-64 md:pb-2 max-md:w-52 max-md:h-80 max-sm:w-[320px] max-sm:h-[157px]">
+    <div className="bg-[#3B3B3B] rounded-3xl lg:w-[330px] lg:h-[439px] md:w-64 md:pb-2 max-md:w-52 max-md:h-80 max-sm:w-[320px] max-sm:h-[157px] hover:scale-110 duration-700">
       <div className="flex flex-col max-sm:flex-row justify-center items-center mx-9 gap-2">
         <img className="max-md:w-40 max-md:h-40 max-sm:w-24 max-sm:h-24 " src={img} alt="" />
         <div>

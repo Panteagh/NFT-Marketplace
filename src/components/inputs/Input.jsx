@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input({ label, icon, button, style }) {
+function Input({ label, icon, button, style,placeholder  }) {
   return (
     <div>
       <div className="[--clr:#1f1f1f] dark:[--clr:#999999] relative flex flex-row items-center mt-7">
@@ -9,7 +9,7 @@ function Input({ label, icon, button, style }) {
           name={label}
           required=""
           aria-invalid="false"
-          placeholder=""
+          placeholder={placeholder}
           spellcheck="false"
           autocomplete="off"
           id={label}
