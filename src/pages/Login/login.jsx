@@ -12,7 +12,7 @@ function Login() {
     <div className="flex gap-14 max-md:flex-col mx-auto">
       <div >
         <img
-          className="w-full max-md:w-full max-md:h-56 object-cover"
+          className="w-full max-md:h-56 object-cover"
           src={img}
         />
       </div>
@@ -31,7 +31,7 @@ function Login() {
           <Input label="Password" icon={<CiLock />} />
           <Input label="Confirm Password" icon={<CiLock />} />
           <Button
-            style="w-full max-lg:w-full mt-7 md:mt5"
+            style="w-full max-lg:w-full mt-7 md:mt5 text-white"
             label="Create account"
           />
         </div>

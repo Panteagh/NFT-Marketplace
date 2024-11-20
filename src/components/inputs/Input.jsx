@@ -9,7 +9,7 @@ function Input({ label, icon, button, style, placeholder  }) {
           name={label}
           required=""
           aria-invalid="false"
-          placeholder={placeholder}
+          placeholder=""
           spellcheck="false"
           autocomplete="off"
           id={label}

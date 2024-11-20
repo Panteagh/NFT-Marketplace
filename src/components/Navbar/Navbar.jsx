@@ -55,17 +55,17 @@ function Navbar() {
           isOpen ? "block" : "hidden"
         } md:flex justify-center items-center gap-16 gap transition-transform`}
       >
-        <ul className="flex justify-center items-center list-none gap-16 font-medium text-base text-white font-serif NavbarRes">
+        <ul className="flex justify-center items-center list-none gap-16 font-medium text-base text-white font-serif NavbarRes ">
           <Link to="/Marketplace">
-            <li>Marketplace</li>
+            <li className="hover:scale-95 duration-700">Marketplace</li>
           </Link>
 
           <Link to="/Rankings">
-            <li>Rankings</li>
+            <li className="hover:scale-95 duration-700">Rankings</li>
           </Link>
 
           <Link to="/Wallet">
-            <li>Connect a wallet</li>
+            <li className="hover:scale-95 duration-700">Connect a wallet</li>
           </Link>
         </ul>
         
