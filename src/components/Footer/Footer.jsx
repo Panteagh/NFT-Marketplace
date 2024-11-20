@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Container from "../container/Container";
 import Button from "../Button/Button";
 import Input from "../inputs/Input";
+import SubscribeForm from "../SubscribeForm/SubscribeForm";
 
 function Footer() {
   return (
@@ -57,17 +58,7 @@ function Footer() {
               Get exclusive promotions & updates straight to your inbox.
             </p>
 
-            <div className="flex max-sm:flex-col w-full justify-center items-center relative ">
-              <Input
-                style="w-[179px relative] "
-                placeholder="Enter your email here"
-                
-              />
-                  <Button
-                    style="h-[40px] w-[100px] right-0 rounded-2xl text-white absolute top-7 left-44  "
-                    label="Subscribe"
-                  />
-            </div>
+            <SubscribeForm />
           </div>
         </div>
       </Container>

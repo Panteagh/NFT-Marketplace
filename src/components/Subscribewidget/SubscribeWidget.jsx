@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../assets/images/photo.png";
+import SubscribeForm from "../SubscribeForm/SubscribeForm";
 
 function SubscribeWidget() {
   return (
@@ -12,9 +13,10 @@ function SubscribeWidget() {
           <h2 className="text-white text-5xl font-bold font-sans max-md:text-3xl">
             Join our weekly digest
           </h2>
-          <p className="text-white text-2xl mt-7">
+          <p className="text-white text-2xl max-md:text-lg mt-7">
             Get exclusive promotions & updates straight to your inbox.
-          </p>     
+          </p>  
+          <SubscribeForm />
         </div>
       </div>
     </div>
