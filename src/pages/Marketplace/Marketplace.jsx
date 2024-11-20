@@ -14,14 +14,14 @@ function Marketplace() {
   }, []);
 
   return (
-    <div>
+    <div className="lg:ml-32 max-sm:mx-3">
       <Container>
         <HeaderPage
           PageHeader="Browse Marketplace"
           description="Browse through more than 50k NFTs on the NFT Marketplace."
         />
 
-        <div className="grid lg:grid-cols-3">
+        <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6">
           {
           nft.map((item)=>(
             <NFTCard key={item.id} {...item}/>

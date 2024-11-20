@@ -2,7 +2,7 @@ import React from "react";
 
 function ArtistRankCard({ id, Avatar, name }) {
   return (
-    <div className="lg:h-20 max-md:h-14 rounded-3xl bg-[#3B3B3B] hover:scale-95 duration-700 ">
+    <div className="lg:h-20 max-md:h-14 rounded-3xl bg-[#3B3B3B] hover:scale-95 duration-700">
       <div className="flex justify-around items-center mt-6">
 
         <div className="bg-[#2B2B2B] text-[#858584] rounded-full lg:w-8 lg:h-8 text-center max-lg:mx-3 md:w-6 md:h-6 sm:w-12 max-sm:h-6 max-sm:w-12 sm:h-6 lg:pt-1">

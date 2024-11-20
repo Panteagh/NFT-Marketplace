@@ -2,9 +2,9 @@ import React from "react";
 
 function NFTCard({style , NFTimg , avatr}) {
   return (
-    <div className={`${style} lg:w-[330px] lg:h-[469px] bg-[#3B3B3B] rounded-3xl hover:scale-95 duration-700`}> 
+    <div className={`${style} lg:w-[330px] lg:h-[469px] bg-[#3B3B3B] rounded-3xl hover:scale-95 duration-700 my-5`}> 
       <div className="lg:h-[295px]">
-        <img src={NFTimg} alt="" />
+        <img className="w-full" src={NFTimg} alt="" />
       </div>
 
       <div className="mx-7 mt-3 md:pb-3 max-md:pb-3">
