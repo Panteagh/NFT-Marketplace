@@ -1,22 +1,22 @@
-import React, { createContext } from 'react'
+import React, { createContext, useContext } from "react";
 
-function NFTMarketContext({children}) {
+export const NftMarketPlaceContext = createContext({});
 
-    
+export const useNftMarketPlaceContext = () => {
+  return useContext(NftMarketPlaceContext);
+};
 
-
+function NFTMarketContext({ children }) {
 
   return (
-    
-      <NFTMarketContext.Provider
-      value={{
-
-      }}
-      >
-        {children}
+    <NFTMarketContext.Provider 
+    value={{
+      
+    }}>
+      {children}
+      
       </NFTMarketContext.Provider>
-   
-  )
+  );
 }
 
-export default NFTMarketContext
+export default NFTMarketContext;

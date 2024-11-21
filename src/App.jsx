@@ -6,10 +6,12 @@ import Wallet from "./pages/Wallet/Wallet";
 import Layout from "./components/Layout/Layout";
 import Login from "./pages/Login/login";
 import ArtistPage from "./pages/ArtistPage/ArtistPage";
+// import NFTMarketContext from "./components/Context/NFTMarketContext";
 
 function App() {
   return (
-    <>
+    
+    // <NFTMarketContext >
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +22,8 @@ function App() {
           <Route path="/ArtistPage/:id" element={<ArtistPage />} />
         </Routes>
       </Layout>
-    </>
+    // </NFTMarketContext>
+
   );
 }
 

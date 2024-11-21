@@ -1,6 +1,6 @@
 import React from "react";
 
-function ArtistRankCard({ id, Avatar, name }) {
+function ArtistRankCard({ id, Avatar, Artistname }) {
   return (
     <div className="lg:h-20 max-md:h-14 rounded-3xl bg-[#3B3B3B] hover:scale-95 duration-700">
       <div className="flex justify-around items-center mt-6">
@@ -16,7 +16,7 @@ function ArtistRankCard({ id, Avatar, name }) {
           />
 
           <h2 className="text-white text-left basis-[300px] text-2xl font-bold max-md:text-lg">
-            {name}
+            {Artistname}
           </h2>         
         </div>
         <span className="basis-40 text-[#00AC4F] max-sm:hidden">+1.41%</span>

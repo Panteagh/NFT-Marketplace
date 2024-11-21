@@ -1,6 +1,6 @@
 import React from "react";
 
-function NFTCard({style , NFTimg , avatr}) {
+function NFTCard({style , NFTimg , Avatar , NFTname , Artistname}) {
   return (
     <div className={`${style} lg:w-[330px] lg:h-[469px] bg-[#3B3B3B] rounded-3xl hover:scale-95 duration-700 my-5`}> 
       <div className="lg:h-[295px]">
@@ -8,10 +8,13 @@ function NFTCard({style , NFTimg , avatr}) {
       </div>
 
       <div className="mx-7 mt-3 md:pb-3 max-md:pb-3">
-        <h2 className="font-semibold text-white text-xl max-md:text-lg font-sans">Life On Edena</h2>
+        <h2 className="font-semibold text-white text-xl max-md:text-lg font-sans">{NFTname}</h2>
         <div className="flex gap-4 items-center">
-            {avatr}
-            <h3 className="text-white font-mono mt-2 max-md:text-sm ">NebulaKid</h3>
+        <img
+            className="w-6 h-6 rounded-s-full"
+            src={Avatar}
+          />
+            <h3 className="text-white font-mono mt-2 max-md:text-sm ">{Artistname}</h3>
         </div>
 
         <div className="max-lg:mt-5 max-md:mb-3">

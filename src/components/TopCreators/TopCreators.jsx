@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import BorderedButton from "../BorderedButton/BorderedButton";
-import { getCreators } from "../services/api";
+import { getApi} from "../services/api";
 import ArtistCard from "../ArtistCard/ArtistCard";
 import { Link } from "react-router-dom";
 import SectionHeadline from "../SectionHeadline/SectionHeadline";
@@ -10,7 +10,7 @@ function TopCreators() {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
-    getCreators().then((res) => {
+    getApi().then((res) => {
       setArtists(res);
     });
   }, []);

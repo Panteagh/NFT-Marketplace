@@ -3,8 +3,6 @@ import { BsShopWindow } from "react-icons/bs";
 import Links from "../links/Links";
 import { Link } from "react-router-dom";
 import Container from "../container/Container";
-import Button from "../Button/Button";
-import Input from "../inputs/Input";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
 
 function Footer() {
