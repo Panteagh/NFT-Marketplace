@@ -10,7 +10,6 @@ import AstroFiction from "../../assets/images/AstroFiction.png"
 import DigiLab from "../../assets/Avatars/DigiLab.png"
 import Keepitreal from "../../assets/Avatars/Keepitreal.png"
 import Shroomie from "../../assets/Avatars/Shroomie.png"
-import Avatar from "../Avatar/Avatar";
 
 function DiscoverMoreNFTsSection() {
   return (
@@ -24,15 +23,15 @@ function DiscoverMoreNFTsSection() {
         </div>
       <div className="mt-12 grid grid-cols-3 max-lg:grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1" >
         <Link to="/Marketplace" >
-        <NFTCard NFTimg={DistantGalaxy} avatr={<Avatar img={DigiLab}/>} />
+        <NFTCard NFTimg={DistantGalaxy} NFTname="Distant Galaxy" Avatar={DigiLab}  Artistname="MoonDancer"/>
         </Link>
 
         <Link to="/Marketplace">
-        <NFTCard NFTimg={LifeOnEdena} avatr={<Avatar img={Keepitreal}/>}/>
+        <NFTCard NFTimg={LifeOnEdena} NFTname="Life On Edena Galaxy" Avatar={Keepitreal} Artistname="NebulaKid"/>
         </Link>
 
         <Link to="/Marketplace">
-        <NFTCard style="max-md:hidden" NFTimg={AstroFiction} avatr={<Avatar img={Shroomie}/>}/>
+        <NFTCard style="max-md:hidden" NFTname="AstroFiction" NFTimg={AstroFiction} Avatar={Shroomie} Artistname="Spaceone"/>
         </Link>
       </div>
     </div>

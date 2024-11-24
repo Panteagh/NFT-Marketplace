@@ -144,7 +144,9 @@ function NFTpage() {
           <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6 mt-6">
               {
                 Nfts.map((item)=>(
+              
                   <NFTCard {...item}/>
+                  
                 ))
               }
           </div>

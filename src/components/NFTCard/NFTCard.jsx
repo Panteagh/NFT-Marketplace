@@ -8,7 +8,7 @@ function NFTCard({style , NFTimg , Avatar , NFTname , Artistname}) {
       </div>
 
       <div className="mx-7 mt-3 md:pb-3 max-md:pb-3">
-        <h2 className="font-semibold text-white text-xl max-md:text-lg font-sans">{NFTname}</h2>
+        <h2 className="font-semibold text-white text-xl max-md:text-sm max-sm:text-lg font-sans ">{NFTname}</h2>
         <div className="flex gap-4 items-center">
         <img
             className="w-6 h-6 rounded-s-full"
