@@ -6,6 +6,7 @@ import Wallet from "./pages/Wallet/Wallet";
 import Layout from "./components/Layout/Layout";
 import Login from "./pages/Login/login";
 import ArtistPage from "./pages/ArtistPage/ArtistPage";
+import NFTpage from "./pages/NFTpage/NFTpage";
 // import NFTMarketContext from "./components/Context/NFTMarketContext";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Wallet" element={<Wallet />} />
           <Route path="/login" element={<Login />} />
           <Route path="/ArtistPage/:id" element={<ArtistPage />} />
+          <Route path="/NFTpage/:id" element={<NFTpage />} />
         </Routes>
       </Layout>
     // </NFTMarketContext>

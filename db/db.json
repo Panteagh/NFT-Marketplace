@@ -3,86 +3,86 @@
     {
       "id": "1",
       "Artistname": "Keepitreal",
-      "Avatar": "src/assets/Avatars/Keepitreal.png",
-      "NFTname": "ColorfulDog0356",
-      "NFTimg": "src/assets/murketPlaceNFTs/ColorfulDog0356.png"
+      "Avatar": "/src/assets/Avatars/Keepitreal.png",
+      "NFTname": "Colorful Dog0356",
+      "NFTimg": "/src/assets/murketPlaceNFTs/ColorfulDog0356.png"
     },
     {
       "id": "2",
       "Artistname": "DigiLab",
-      "Avatar": "src/assets/Avatars/DigiLab.png",
-      "NFTname": "MagicMushroom0324",
-      "NFTimg": "src/assets/murketPlaceNFTs/MagicMushroom0324.png"
+      "Avatar": "/src/assets/Avatars/DigiLab.png",
+      "NFTname": "Magic Mushroom0324",
+      "NFTimg": "/src/assets/murketPlaceNFTs/MagicMushroom0324.png"
     },
     {
       "id": "3",
       "Artistname": "GravityOne",
-      "Avatar": "src/assets/Avatars/GravityOne.png",
-      "NFTname": "AstroFiction",
-      "NFTimg": "src/assets/murketPlaceNFTs/AstroFiction.png"
+      "Avatar": "/src/assets/Avatars/GravityOne.png",
+      "NFTname": "Astro Fiction",
+      "NFTimg": "/src/assets/murketPlaceNFTs/AstroFiction.png"
     },
     {
       "id": "4",
       "Artistname": "Juanie",
-      "Avatar": "src/assets/Avatars/Juanie.png",
-      "NFTname": "CatFromFuture",
-      "NFTimg": "src/assets/murketPlaceNFTs/CatFromFuture.png"
+      "Avatar": "/src/assets/Avatars/BlueWhale.png",
+      "NFTname": "Cat From Future",
+      "NFTimg": "/src/assets/murketPlaceNFTs/CatFromFuture.png"
     },
     {
       "id": "5",
       "Artistname": "BlueWhale",
-      "Avatar": "src/assets/Avatars/BlueWhale.png",
-      "NFTname": "CherryBlossomGirl035",
-      "NFTimg": "src/assets/murketPlaceNFTs/CherryBlossomGirl035.png"
+      "Avatar": "/src/assets/Avatars/BlueWhale.png",
+      "NFTname": "Cherry Blossom Girl035",
+      "NFTimg": "/src/assets/murketPlaceNFTs/CherryBlossomGirl035.png"
     },
     {
       "id": "6",
       "Artistname": "mrFox",
-      "Avatar": "src/assets/Avatars/mrFox.png",
+      "Avatar": "/src/assets/Avatars/mrFox.png",
       "NFTname": "Sunset0Dimension",
-      "NFTimg": "src/assets/murketPlaceNFTs/Sunset0Dimension.png"
+      "NFTimg": "/src/assets/murketPlaceNFTs/Sunset0Dimension.png"
     },
     {
       "id": "7",
       "Artistname": "Shroomie",
-      "Avatar": "src/assets/Avatars/Shroomie.png",
-      "NFTname": "DancingRobot0375",
-      "NFTimg": "src/assets/murketPlaceNFTs/DancingRobot0375.png"
+      "Avatar": "/src/assets/Avatars/Shroomie.png",
+      "NFTname": "Dancing Robot0375",
+      "NFTimg": "/src/assets/murketPlaceNFTs/DancingRobot0375.png"
     },
     {
       "id": "8",
       "Artistname": "robotica",
-      "Avatar": "src/assets/Avatars/robotica.png",
-      "NFTname": "DesertWalk",
-      "NFTimg": "src/assets/murketPlaceNFTs/DesertWalk.png"
+      "Avatar": "/src/assets/Avatars/robotica.png",
+      "NFTname": "Desert Walk",
+      "NFTimg": "/src/assets/murketPlaceNFTs/DesertWalk.png"
     },
     {
       "id": "9",
       "Artistname": "RustyRobot",
-      "Avatar": "src/assets/Avatars/RustyRobot.png",
-      "NFTname": "DesignerBear",
-      "NFTimg": "src/assets/murketPlaceNFTs/DesignerBear.png"
+      "Avatar": "/src/assets/Avatars/RustyRobot.png",
+      "NFTname": "Designer Bear",
+      "NFTimg": "/src/assets/murketPlaceNFTs/DesignerBear.png"
     },
     {
       "id": "10",
       "Artistname": "animakid",
-      "Avatar": "src/assets/Avatars/animakid.png",
-      "NFTname": "HappyRobot024",
-      "NFTimg": "src/assets/murketPlaceNFTs/HappyRobot024.png"
+      "Avatar": "/src/assets/Avatars/animakid.png",
+      "NFTname": "Happy Robot024",
+      "NFTimg": "/src/assets/murketPlaceNFTs/HappyRobot024.png"
     },
     {
       "id": "11",
       "Artistname": "Dotgu",
-      "Avatar": "src/assets/Avatars/Dotgu.png",
-      "NFTname": "IceCreamApe0324",
-      "NFTimg": "src/assets/murketPlaceNFTs/IceCreamApe0324.png"
+      "Avatar": "/src/assets/Avatars/Dotgu.png",
+      "NFTname": "Ice Cream Ape0324",
+      "NFTimg": "/src/assets/murketPlaceNFTs/IceCreamApe0324.png"
     },
     {
       "id": "12",
       "Artistname": "Ghiblier",
-      "Avatar": "src/assets/Avatars/Ghiblier.png",
-      "NFTname": "LifeOnEdena",
-      "NFTimg": "src/assets/murketPlaceNFTs/LifeOnEdena.png"
+      "Avatar": "/src/assets/Avatars/Ghiblier.png",
+      "NFTname": "Life On Edena",
+      "NFTimg": "/src/assets/murketPlaceNFTs/LifeOnEdena.png"
     }
   ]
   
