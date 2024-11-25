@@ -14,25 +14,27 @@ function NFTpage() {
   const { id } = useParams();
 
   const [NftData, setNftData] = useState({});
-  const [Nfts , setNfts] =useState([])
+  const [Nfts, setNfts] = useState([]);
 
   useEffect(() => {
     getNftData(id).then((res) => {
       setNftData(res);
     });
 
-    getApi() .then(result =>{
-      setNfts(result)
-      console.log(result)
-    })
+    getApi().then((result) => {
+      setNfts(result);
+      console.log(result);
+    });
   }, []);
 
   return (
-    <div>
+    <>
       <div>
-        <img className="w-full md:h-[560px] max-md:h-[420px] max-sm:h-80" src={NftData.NFTimg} />
+        <img
+          className="w-full md:h-[560px] max-md:h-[420px] max-sm:h-80"
+          src={NftData.NFTimg}
+        />
       </div>
-      
 
       <div className=" lg:ml-32 max-sm:mx-3 mx-8 mt-10">
         <div className="flex lg:flex-row-reverse max-lg:flex-row-reverse max-sm:flex-col justify-between max-sm:items-center">
@@ -50,7 +52,7 @@ function NFTpage() {
             />
           </div>
 
-          <div className="">
+          <div>
             <div>
               <h2 className="text-white font-bold text-5xl max-md:text-lg">
                 {NftData.NFTname}
@@ -64,8 +66,8 @@ function NFTpage() {
               <label className="text-[#858584]  font-bold text-2xl max-md:text-lg font-mono">
                 Created By
               </label>
-              <Link to="">
-                <div className="flex gap-4 items-center mt-4">
+              <Link to={`/ArtistPage/${id}`}>
+                <div className="flex gap-4 items-center mt-4 hover:scale-95 duration-700">
                   <img
                     className="w-6 h-6 rounded-s-full"
                     src={NftData.Avatar}
@@ -106,11 +108,15 @@ function NFTpage() {
               <div className="flex-col mt-4">
                 <div className="flex  gap-2 items-center">
                   <CiGlobe color="#858584" size={24} />
-                  <span className="text-white text-xl max-md:text-lg">View on Etherscan</span>
+                  <span className="text-white text-xl max-md:text-lg">
+                    View on Etherscan
+                  </span>
                 </div>
                 <div className="flex gap-2 items-center mt-2">
                   <CiGlobe color="#858584" size={24} />
-                  <span className="text-white text-xl max-md:text-lg">View Original</span>
+                  <span className="text-white text-xl max-md:text-lg">
+                    View Original
+                  </span>
                 </div>
               </div>
             </div>
@@ -126,7 +132,6 @@ function NFTpage() {
                 <Tag label="moon" />
                 <Tag label="Star" />
               </div>
-
             </div>
           </div>
         </div>
@@ -142,18 +147,13 @@ function NFTpage() {
           </div>
 
           <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6 mt-6">
-              {
-                Nfts.map((item)=>(
-              
-                  <NFTCard {...item}/>
-                  
-                ))
-              }
+            {Nfts.map((item) => (
+              <NFTCard {...item} />
+            ))}
           </div>
         </div>
       </div>
-      
-    </div>
+    </>
   );
 }
 
