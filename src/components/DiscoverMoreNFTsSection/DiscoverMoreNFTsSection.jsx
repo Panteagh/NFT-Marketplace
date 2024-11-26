@@ -19,7 +19,9 @@ function DiscoverMoreNFTsSection() {
         sectionLabel="Discover More NFTs"
         description="Explore new trending NFTs"
       />
+      <Link to="/Marketplace">
     <BorderedButton style="w-[167px] h-[60px] max-sm:hidden" icon={<IoEyeOutline color="#A259FF"/>} label="See All"/>
+      </Link>
         </div>
       <div className="mt-12 grid grid-cols-3 max-lg:grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1" >
         <Link to="/Marketplace" >

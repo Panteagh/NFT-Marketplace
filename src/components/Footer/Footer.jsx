@@ -35,15 +35,15 @@ function Footer() {
             </span>
 
             <Link to="/Marketplace">
-              <p className="mt-6">Marketplace</p>
+              <p className="mt-6 hover:scale-95 duration-700">Marketplace</p>
             </Link>
 
             <Link to="/Rankings">
-              <p className="mt-4">Rankings</p>
+              <p className="mt-4 hover:scale-95 duration-700">Rankings</p>
             </Link>
 
             <Link to="/Wallet">
-              <p className="mt-4">Connect a wallet</p>
+              <p className="mt-4 hover:scale-95 duration-700">Connect a wallet</p>
             </Link>
           </div>
 

@@ -43,7 +43,7 @@ function Collection({
           {nameCollection}
         </span>
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 hover:scale-95 duration-700">
           {Avatar}
           <span className="text-white text-md font-sans">
             {artis}

@@ -7,36 +7,41 @@ export const useNftMarketPlaceContext = () => {
 };
 
 export function NFTMarketContextProvider({ children }) {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const [isFollow , setIsFollow] = useState(true)
+  const toggelMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
 
-  const CopyArtistLink = () =>{
-    let copyText = "0xc0E3G6VnB79C"
-    if(window.navigator.clipboard){
-      window.navigator.clipboard.writeText(copyText)
-      alert('copy link')
+  const [isFollow, setIsFollow] = useState(true);
+
+  const CopyArtistLink = () => {
+    let copyText = "0xc0E3G6VnB79C";
+    if (window.navigator.clipboard) {
+      window.navigator.clipboard.writeText(copyText);
+      alert("copy link");
     } else {
-      alert('Your browser does not support it')
+      alert("Your browser does not support it");
     }
-  }
+  };
 
   const followHandler = () => {
-    setIsFollow (!isFollow)
+    setIsFollow(!isFollow);
     console.log(isFollow);
-    
-  }
+  };
 
   return (
-    <NftMarketPlaceContext.Provider 
-    value={{
-      CopyArtistLink,
-      followHandler,
-      isFollow
-    }}>
+    <NftMarketPlaceContext.Provider
+      value={{
+        CopyArtistLink,
+        followHandler,
+        isFollow,
+        isOpen,
+        toggelMenu,
+      }}
+    >
       {children}
-      
-      </NftMarketPlaceContext.Provider>
+    </NftMarketPlaceContext.Provider>
   );
 }
-
-
