@@ -7,11 +7,11 @@ import SubscribeForm from "../SubscribeForm/SubscribeForm";
 
 function Footer() {
   return (
-    <div className="bg-[#3B3B3B] h-auto ">
+    <div className="bg-[#3B3B3B] h-auto pt-2">
       <Container>
         <div className="lg:flex max-md:flex-col max-md:text-left justify-between lg:mx-36 text-[#858584] space font-sans">
           <div>
-            <div className="flex items-center gap-3 max-md:text-xs mt-11 max-md:mt-11">
+            <div className="flex items-center gap-3 max-md:text-xs mt-11">
               <BsShopWindow color="#A259FF" size={32} />
 
               <span className="font-mono text-xl font-bold text-white max-md:text-sm">

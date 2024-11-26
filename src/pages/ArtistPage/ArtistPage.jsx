@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../assets/images/HeaderCreatorPage.png";
 import { getApi, getNftData } from "../../components/services/api";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ArtistState from "../../components/ArtistState/ArtistState";
 import Links from "../../components/links/Links";
 import Button from "../../components/Button/Button";
@@ -13,17 +13,16 @@ import NFTCard from "../../components/NFTCard/NFTCard";
 function ArtistPage() {
   const { id } = useParams();
   const [creatorData, setCreatorData] = useState([]);
-  const [NFTs , setNFTs] =useState([])
+  const [NFTs, setNFTs] = useState([]);
 
   useEffect(() => {
     getNftData(id).then((res) => {
       setCreatorData(res);
     });
 
-    getApi ().then (result =>{
-      setNFTs(result)
-    })
-
+    getApi().then((result) => {
+      setNFTs(result);
+    });
   }, []);
 
   return (
@@ -39,7 +38,6 @@ function ArtistPage() {
       </div>
       <div className=" lg:mx-32 max-sm:mx-3 mx-8 mt-20">
         <div className="flex justify-between mt-10 max-md:flex-col-reverse max-md:justify-center max-md:items-center">
-
           <div className="max-md:mt-8">
             <h2 className="text-white text-5xl max-md:text-3xl max-sm:text-2xl font-bold">
               {creatorData.Artistname}
@@ -62,29 +60,35 @@ function ArtistPage() {
             </div>
 
             <div className="mt-10">
-            <label className="text-[#858584]  font-bold text-2xl max-md:text-lg font-mono ">
-            Links
+              <label className="text-[#858584]  font-bold text-2xl max-md:text-lg font-mono ">
+                Links
               </label>
               <Links />
             </div>
           </div>
           <div className="flex gap-3 ">
-          <Button style="bg-[#A259FF] md:w-[186px] text-white" label="0xc0E3...B79C" icon={<PiCopy color="white"/>}/>
-          <BorderedButton style="md:w-[145px]" icon={<BsPlusLg color="#A259FF" />} label="Follow" />
+            <Button
+              style="bg-[#A259FF] md:w-[186px] text-white"
+              label="0xc0E3...B79C"
+              icon={<PiCopy color="white" />}
+            />
+            <BorderedButton
+              style="md:w-[145px]"
+              icon={<BsPlusLg color="#A259FF" />}
+              label="Follow"
+            />
           </div>
         </div>
-
       </div>
-        <div className="bg-[#353434] py-10">
-          <div className="lg:mx-32 max-sm:mx-3 mx-8 grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5">
-          {
-            NFTs.map(item =>(
+      <div className="bg-[#353434] py-10">
+        <div className="lg:mx-32 max-sm:mx-3 mx-8 grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5">
+          {NFTs.map((item) => (
+            <Link key={item.id} to={`/NFTpage/${item.id}`}>
               <NFTCard {...item} />
-            ))
-          }
-
-          </div>
+            </Link>
+          ))}
         </div>
+      </div>
     </>
   );
 }
