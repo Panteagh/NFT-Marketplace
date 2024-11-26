@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <div className="flex items-center justify-between my-6 mx-12">
+    <div className="flex items-center justify-between my-6 mx-12 px-8">
       <Link to="/">
         <div className="flex items-center gap-3 max-md:text-xs">
           <BsShopWindow color="#A259FF" size={32} />

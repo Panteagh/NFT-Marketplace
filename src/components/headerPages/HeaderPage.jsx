@@ -7,7 +7,7 @@ function HeaderPage({PageHeader , description}) {
           {PageHeader}
         </h1>
 
-        <p className="mt-6 md:mt-4 text-white lg:text-2xl max-md:text-lg font-sans ">
+        <p className="mt-6 lg:w-[600px] md:mt-4 text-white lg:text-2xl max-md:text-lg font-sans ">
          {description}
         </p>
     </div>

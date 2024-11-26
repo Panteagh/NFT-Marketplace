@@ -9,7 +9,7 @@ import HeaderPage from "../../components/headerPages/HeaderPage";
 
 function Login() {
   return (
-    <div className="flex gap-14 max-md:flex-col mx-auto">
+    <div className="flex gap-14 max-md:flex-col mx-auto max-md:pb-9">
       <div >
         <img
           className="w-full max-md:h-56 object-cover"
@@ -25,7 +25,7 @@ function Login() {
           NFTs."
         />
         
-        <div className="w-80 mt-6 md:mt-5 max-md:w-full">
+        <div className="w-80 mt-6 md:mt-5 max-md:w-full pr-9">
           <Input label="Username" icon={<LuUser2 />} />
           <Input label="Email Address" icon={<MdOutlineMailOutline />} />
           <Input label="Password" icon={<CiLock />} />

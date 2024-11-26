@@ -7,12 +7,12 @@ import Layout from "./components/Layout/Layout";
 import Login from "./pages/Login/login";
 import ArtistPage from "./pages/ArtistPage/ArtistPage";
 import NFTpage from "./pages/NFTpage/NFTpage";
-// import NFTMarketContext from "./components/Context/NFTMarketContext";
+import {NFTMarketContextProvider} from "./components/Context/NFTMarketContext";
 
 function App() {
   return (
     
-    // <NFTMarketContext >
+    <NFTMarketContextProvider  >
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/NFTpage/:id" element={<NFTpage />} />
         </Routes>
       </Layout>
-    // </NFTMarketContext>
+   </NFTMarketContextProvider>
 
   );
 }
