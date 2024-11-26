@@ -9,11 +9,14 @@ import { PiCopy } from "react-icons/pi";
 import BorderedButton from "../../components/BorderedButton/BorderedButton";
 import { BsPlusLg } from "react-icons/bs";
 import NFTCard from "../../components/NFTCard/NFTCard";
+import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
 
 function ArtistPage() {
   const { id } = useParams();
   const [creatorData, setCreatorData] = useState([]);
   const [NFTs, setNFTs] = useState([]);
+  const { CopyArtistLink, followHandler, isFollow } =
+    useNftMarketPlaceContext();
 
   useEffect(() => {
     getNftData(id).then((res) => {
@@ -71,12 +74,23 @@ function ArtistPage() {
               style="bg-[#A259FF] md:w-[186px] text-white"
               label="0xc0E3...B79C"
               icon={<PiCopy color="white" />}
+              onClick={CopyArtistLink}
             />
-            <BorderedButton
-              style="md:w-[145px]"
-              icon={<BsPlusLg color="#A259FF" />}
-              label="Follow"
-            />
+
+            {isFollow ? (
+              <BorderedButton
+                style="md:w-[145px]"
+                icon={<BsPlusLg color="#A259FF" />}
+                label="Follow"
+                onClick={followHandler}
+              />
+            ) : (
+              <BorderedButton
+                style="md:w-[145px] text-white"
+                label="Following"
+                onClick={followHandler}
+              />
+            )}
           </div>
         </div>
       </div>
