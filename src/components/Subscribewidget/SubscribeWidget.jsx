@@ -4,19 +4,21 @@ import SubscribeForm from "../SubscribeForm/SubscribeForm";
 
 function SubscribeWidget() {
   return (
-    <div className="bg-[#3B3B3B] rounded-3xl lg:mx-36 max-lg:mx-0 mt-20 mb-10 h-[430px] max-w-[1095px] max-md:max-w-[690px] max-md:h-[360px]">
-      <div className="flex justify-center items-center gap-20 pt-14 max-md:gap-4">
-        <div>
-          <img src={img} alt="" />
-        </div>
-        <div className="w-[425px] h-[272px]">
-          <h2 className="text-white text-5xl font-bold font-sans max-md:text-3xl">
-            Join our weekly digest
-          </h2>
-          <p className="text-white text-2xl max-md:text-lg mt-7">
-            Get exclusive promotions & updates straight to your inbox.
-          </p>  
-          <SubscribeForm />
+    <div className="bg-[#3B3B3B] max-sm:bg-transparent rounded-3xl lg:mx-36 max-lg:mx-0 md:mt-20 md:mb-20 md:h-[430px] max-w-[1095px] max-md:max-w-[690px] px-5 py-12">
+      <div className="">
+        <div className="flex max-md:flex-col justify-center items-center gap-20 max-md:gap-4">
+          <div className="h-full">
+            <img className="h-full" src={img} alt="" />
+          </div>
+          <div className="md:w-[425px] md:h-[272px] max-md:[315px]">
+            <h2 className="text-white text-5xl font-bold font-sans max-md:text-2xl">
+              Join our weekly digest
+            </h2>
+            <p className="text-white text-2xl  max-md:text-base mt-7 max-md:mt-4">
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <SubscribeForm />
+          </div>
         </div>
       </div>
     </div>
