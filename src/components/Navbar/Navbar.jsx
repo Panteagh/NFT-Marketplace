@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { BsShopWindow } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
@@ -51,7 +50,7 @@ function Navbar() {
           </button>
         </header>
         <NavbarMenu />
-         <Sidebar isOpen={isOpen} toggle={toggelMenu} />
+        <Sidebar isOpen={isOpen} toggle={toggelMenu} />
         {isOpen && (
           <div className="fixed inset-0  md:hidden" onClick={toggelMenu}></div>
         )}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const CountdownTimer = ({ initialHours, initialMinutes, initialSeconds , button}) => {
+const CountdownTimer =React.memo(({ initialHours, initialMinutes, initialSeconds , button}) => {
   const [time, setTime] = useState({
     hours: initialHours,
     minutes: initialMinutes,
@@ -58,6 +58,7 @@ const CountdownTimer = ({ initialHours, initialMinutes, initialSeconds , button}
        
     </div>
   );
-};
+
+});
 
 export default CountdownTimer;

@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export const NftMarketPlaceContext = createContext({});
 
@@ -31,6 +32,15 @@ export function NFTMarketContextProvider({ children }) {
     console.log(isFollow);
   };
 
+  const handelScrolling = () =>{
+    const location = useLocation()
+
+    useEffect(()=>{
+      window.scrollTo(0,0)
+    } ,[location.pathname])
+
+  }
+
   return (
     <NftMarketPlaceContext.Provider
       value={{
@@ -39,6 +49,7 @@ export function NFTMarketContextProvider({ children }) {
         isFollow,
         isOpen,
         toggelMenu,
+        handelScrolling
       }}
     >
       {children}

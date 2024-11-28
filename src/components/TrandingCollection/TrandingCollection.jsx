@@ -12,7 +12,6 @@ import DancingRobot0356 from "../../assets/images/DancingRobot0356.png";
 import mrFox from "../../assets/Avatars/mrFox.png";
 import Shroomie from "../../assets/Avatars/Shroomie.png";
 import BlueWhale from "../../assets/Avatars/BlueWhale.png";
-
 import Avatar from "../Avatar/Avatar";
 
 function TrandingCollection() {

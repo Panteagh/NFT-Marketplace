@@ -1,25 +1,27 @@
 import React from "react";
-import img from "../../assets/images/Wallet.png";
+import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
 import HeaderPage from "../../components/headerPages/HeaderPage";
 import WalletOptionsButton from "../../components/WalletOptionsButton/WalletOptionsButton";
+import img from "../../assets/images/Wallet.png";
 
 function Wallet() {
+
+  const { handelScrolling } = useNftMarketPlaceContext();
+  handelScrolling();
+
   return (
     <div className="grid md:grid-cols-2 max-md:grid-cols-1 gap-6 mx-auto max-md:w-full">
       <div className="max-md:w-full ">
-        <img
-          className="w-full max-md:h-56 object-cover"
-          src={img}
-        />
+        <img className="w-full max-md:h-56 object-cover" src={img} />
       </div>
+
       <div className="max-md:mx-auto mx-5 ">
         <HeaderPage
           PageHeader="Connect wallet"
           description="Choose a wallet you want to connect. There are several wallet providers."
         />
 
-        <div className="">
-          
+        <div>
           <WalletOptionsButton
             style="max-lg:w-[320px] max-md:w-full max-md:h-12"
             icon={

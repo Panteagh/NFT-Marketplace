@@ -11,7 +11,7 @@
       "id": "2",
       "Artistname": "DigiLab",
       "Avatar": "/src/assets/Avatars/DigiLab.png",
-      "NFTname": "Magic Mushroom0324",
+      "NFTname": "Magic Mushroom",
       "NFTimg": "/src/assets/murketPlaceNFTs/MagicMushroom0324.png"
     },
     {
@@ -32,7 +32,7 @@
       "id": "5",
       "Artistname": "BlueWhale",
       "Avatar": "/src/assets/Avatars/BlueWhale.png",
-      "NFTname": "Cherry Blossom Girl035",
+      "NFTname": "Cherry Blossom Girl",
       "NFTimg": "/src/assets/murketPlaceNFTs/CherryBlossomGirl035.png"
     },
     {

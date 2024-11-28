@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getApi, getNftData } from "../../components/services/api";
 import { CiGlobe } from "react-icons/ci";
+import { GoArrowRight } from "react-icons/go";
+import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
 import Tag from "../../components/Tag/Tag";
 import CountdownTimer from "../../components/CountdownTimer/CountdownTimer";
 import Button from "../../components/Button/Button";
 import SectionHeadline from "../../components/SectionHeadline/SectionHeadline";
 import BorderedButton from "../../components/BorderedButton/BorderedButton";
-import { GoArrowRight } from "react-icons/go";
 import NFTCard from "../../components/NFTCard/NFTCard";
 
 function NFTpage() {
+  const { handelScrolling } = useNftMarketPlaceContext();
   const { id } = useParams();
-
   const [NftData, setNftData] = useState({});
   const [Nfts, setNfts] = useState([]);
 
@@ -23,9 +24,20 @@ function NFTpage() {
 
     getApi().then((result) => {
       setNfts(result);
-      console.log(result);
     });
   }, [Nfts]);
+
+  handelScrolling();
+
+  const NftCards = useMemo(
+    () =>
+      Nfts.map((item) => (
+        <Link key={item.id} to={`/NFTpage/${item.id}`}>
+          <NFTCard key={item.id} {...item} />
+        </Link>
+      )),
+    [Nfts]
+  );
 
   return (
     <>
@@ -126,14 +138,14 @@ function NFTpage() {
                 Tags
               </label>
 
-                <Link to="/Marketplace">
-              <div className="flex max-md:flex-col gap-5 mt-4">
-                <Tag label="Animation" />
-                <Tag label="illustration" />
-                <Tag label="moon" />
-                <Tag label="Star" />
-              </div>
-                </Link>
+              <Link to="/Marketplace">
+                <div className="flex max-md:flex-col gap-5 mt-4">
+                  <Tag label="Animation" />
+                  <Tag label="illustration" />
+                  <Tag label="moon" />
+                  <Tag label="Star" />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -142,22 +154,16 @@ function NFTpage() {
           <div className="flex justify-between mt-10">
             <SectionHeadline sectionLabel="More from this artist" />
             <Link to={`/ArtistPage/${id}`}>
-            <BorderedButton
-              style="w-[267px]"
-              label="Go To Artist Page"
-              icon={<GoArrowRight color="#A259FF" />}
-            />
+              <BorderedButton
+                style="w-[267px]"
+                label="Go To Artist Page"
+                icon={<GoArrowRight color="#A259FF" />}
+              />
             </Link>
           </div>
 
           <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6 mt-6">
-          {
-          Nfts.map((item)=>(
-            <Link key={item.id} to={`/NFTpage/${item.id}`}>
-            <NFTCard key={item.id} {...item}/>
-            </Link>
-          ))
-        }
+            {NftCards}
           </div>
         </div>
       </div>
