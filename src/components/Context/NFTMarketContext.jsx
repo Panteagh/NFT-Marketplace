@@ -12,7 +12,6 @@ export function NFTMarketContextProvider({ children }) {
 
   const toggelMenu = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   const [isFollow, setIsFollow] = useState(true);
@@ -29,7 +28,6 @@ export function NFTMarketContextProvider({ children }) {
 
   const followHandler = () => {
     setIsFollow(!isFollow);
-    console.log(isFollow);
   };
 
   const handelScrolling = () =>{

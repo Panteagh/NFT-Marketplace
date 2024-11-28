@@ -15,8 +15,6 @@ function TopCreators() {
     });
   }, []);
 
-  console.log(artists);
-
   return (
     <div className="lg:mx-36 mt-20 mb-10">
       <div className="flex justify-between mt-4 mr-11">

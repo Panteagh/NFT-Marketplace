@@ -56,10 +56,12 @@ function NFTpage() {
               initialMinutes={59}
               initialSeconds={59}
               button={
+                <Link to="/Wallet">
                 <Button
                   label="Place Bid"
                   style="bg-[#A259FF] w-full h-[60px] mt-5"
-                />
+                  />
+                </Link>
               }
             />
           </div>
@@ -155,7 +157,7 @@ function NFTpage() {
             <SectionHeadline sectionLabel="More from this artist" />
             <Link to={`/ArtistPage/${id}`}>
               <BorderedButton
-                style="w-[267px]"
+                style="w-[267px] max-md:text-xs"
                 label="Go To Artist Page"
                 icon={<GoArrowRight color="#A259FF" />}
               />
