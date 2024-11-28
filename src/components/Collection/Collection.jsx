@@ -11,13 +11,13 @@ function Collection({
   artis,
 }) {
   return (
-    <div className={`${display} w-[330px] h-[525px] flex-col mt-12`}>
+    <div className={`${display} w-full h-[525px] flex-col mt-12`}>
       
       <div>
 
         <div>
           <img
-            className="rounded-3xl h-[330px] w-[330px] hover:scale-95 duration-700"
+            className="rounded-3xl h-[330px] w-full hover:scale-95 duration-700"
             src={trandNFT}
           />
         </div>

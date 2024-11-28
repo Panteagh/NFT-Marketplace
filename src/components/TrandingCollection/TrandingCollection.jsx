@@ -22,7 +22,7 @@ function TrandingCollection() {
         description="Checkout our weekly updated trending collection."
       />
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 justify-between mx-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 gap-5 justify-between mx-auto">
         <Collection
           trandNFT={PsychoDog}
           subtrandNFT1={CatFromFuture}

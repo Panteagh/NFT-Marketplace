@@ -3,7 +3,7 @@ import React from "react";
 function NFTCard({ style, NFTimg, Avatar, NFTname, Artistname }) {
   return (
     <div
-      className={`${style} lg:w-[330px] lg:h-[469px] bg-[#3B3B3B] rounded-3xl hover:scale-95 duration-700 my-5 `}
+      className={`${style} lg:w-[330px] lg:h-[469px] max-md:h-80 bg-[#3B3B3B] rounded-3xl hover:scale-95 duration-700 my-5 `}
     >
       <div className="lg:h-[295px]">
         <img className="w-full" src={NFTimg} alt="" />

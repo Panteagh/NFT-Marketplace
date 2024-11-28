@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function NFTHighlightSection() {
   return (
     <div className="min-w-full h-[640px] bg-custom-bg bg-no-repeat bg-cover relative mb-4 ">
-      <div className="absolute top-[222px] left-[184px] md:left-16 max-md:left-28 mx-16 max-md:mx-auto">
+      <div className="absolute top-[222px] left-[184px] md:left-16 max-md:left-16 mx-16 max-md:mx-auto">
         <Link to={`/ArtistPage/${7}`}>
           <div className="rounded-3xl bg-[#3B3B3B] flex gap-2 w-[151px] h-[44px] justify-center items-center hover:scale-95 duration-700">
             <Avatar img={img} />

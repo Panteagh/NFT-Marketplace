@@ -8,7 +8,7 @@ function Navbar() {
   const { isOpen, toggelMenu } = useNftMarketPlaceContext();
 
   return (
-    <div className="flex items-center justify-between my-6 mx-12">
+    <div className="flex items-center justify-between my-6 md:mx-12 max-md:mx-4">
       <Link to="/">
         <div className="flex items-center gap-3 max-md:text-xs">
           <BsShopWindow color="#A259FF" size={32} />

@@ -35,7 +35,7 @@ function TopCreators() {
         </div>
       </div>
 
-      <div className="  grid lg:grid-cols-4 md:grid-cols-2 max-md:grid-cols-1 justify-between mt-4">
+      <div className="  grid lg:grid-cols-4 md:grid-cols-2 max-md:grid-cols-1 justify-between gap-4 mt-4">
 
         {artists.map((item) => (
           <Link key={item.id} to={`/ArtistPage/${item.id}`}>
