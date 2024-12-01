@@ -59,7 +59,7 @@ function NFTpage() {
                 <Link to="/Wallet">
                 <Button
                   label="Place Bid"
-                  style="bg-[#A259FF] w-full h-[60px] mt-5"
+                  style="bg-[#A259FF] min-w-[150px] h-[60px] mt-5"
                   />
                 </Link>
               }
