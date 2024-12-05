@@ -15,7 +15,7 @@ function Login() {
 
   return (
     <div className="flex gap-14 max-md:flex-col mx-auto max-md:pb-9">
-      <div>
+      <div className="w-2/4 max-md:w-full">
         <img className="w-full max-md:h-56 object-cover" src={img} />
       </div>
 
