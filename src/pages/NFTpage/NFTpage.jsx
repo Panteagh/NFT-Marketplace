@@ -45,6 +45,7 @@ function NFTpage() {
         <img
           className="w-full md:h-[560px] max-md:h-[420px] max-sm:h-80"
           src={NftData.NFTimg}
+          loading="lazy"
         />
       </div>
 
