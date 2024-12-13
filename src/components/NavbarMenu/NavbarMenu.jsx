@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
 import { GoPerson } from "react-icons/go";
+import Button from "../Button/Button";
 import React from "react";
 
 const NavbarMenu = () => {
