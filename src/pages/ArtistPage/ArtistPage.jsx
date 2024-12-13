@@ -41,7 +41,7 @@ function ArtistPage() {
           src={Header}
         />
 
-        <div className="w-32 h-32 rounded-lg absolute bottom-[-55px] left-28">
+        <div className="w-32 h-32 rounded-lg absolute bottom-[-55px] left-28 max-sm:left-1/3 max-sm:right-1/3">
           <img src={creatorData.Avatar} />
         </div>
 

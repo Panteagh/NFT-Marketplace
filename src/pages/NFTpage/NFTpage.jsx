@@ -41,7 +41,7 @@ function NFTpage() {
 
   return (
     <>
-      <div className="px-32">
+      <div className="md:px-32">
         <img
           className="w-full md:h-[560px] max-md:h-[420px] max-sm:h-80"
           src={NftData.NFTimg}
@@ -158,7 +158,7 @@ function NFTpage() {
             <SectionHeadline sectionLabel="More from this artist" />
             <Link to={`/ArtistPage/${id}`}>
               <BorderedButton
-                style="w-[267px] max-md:text-xs"
+                style="md:w-[267px] max-md:hidden mr-24"
                 label="Go To Artist Page"
                 icon={<GoArrowRight color="#A259FF" />}
               />

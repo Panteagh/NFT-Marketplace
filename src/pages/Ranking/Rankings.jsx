@@ -26,7 +26,6 @@ function Rankings() {
           description="Check out top ranking NFT artists on the NFT Marketplace."
         />
 
-        <div> {/* Tab */}</div>
         <div className="bg-transparent border-[#858584]/50 rounded-3xl border-[1px] h-12 mt-9 ">
           <div className="flex justify-around items-center mx-5 mt-3 text-[#858584] font-mono">
             <span className="basis-4">#</span>
