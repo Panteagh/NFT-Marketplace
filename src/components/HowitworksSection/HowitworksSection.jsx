@@ -1,9 +1,9 @@
 import React from 'react'
 import SectionHeadline from '../SectionHeadline/SectionHeadline'
 import InfoCard from '../InfoCard/InfoCard'
-import icon1 from "../../assets/images/icon.png";
-import icon2 from "../../assets/images/icon1.png";
-import icon3 from "../../assets/images/icon2.png";
+import icon1 from "../../assets/images/Icon.png";
+import icon2 from "../../assets/images/Icon1.png";
+import icon3 from "../../assets/images/Icon2.png";
 
 function HowitworksSection() {
   return (
