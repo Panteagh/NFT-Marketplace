@@ -1,14 +1,14 @@
 import React from "react";
-import SectionHeadline from "../SectionHeadline/SectionHeadline";
-import CategoryCard from "../CategoryCard/CategoryCard";
-import Art from "../../assets/categoryImg/Art.png";
-import Collectbles from "../../assets/categoryImg/Collectbles.png";
-import Music from "../../assets/categoryImg/Music.png";
-import Photography from "../../assets/categoryImg/Photography.png";
-import Sport from "../../assets/categoryImg/Sport.png";
-import Utility from "../../assets/categoryImg/Utility.png";
-import Video from "../../assets/categoryImg/Video.png";
-import VirtualWorlds from "../../assets/categoryImg/VirtualWorlds.png";
+import SectionHeadline from "/src/components/SectionHeadline/SectionHeadline";
+import CategoryCard from "/src/components/CategoryCard/CategoryCard";
+import Art from "/src/assets/categoryImg/Art.png";
+import Collectbles from "/src/assets/categoryImg/Collectbles.png";
+import Music from "/src/assets/categoryImg/Music.png";
+import Photography from "/src/assets/categoryImg/Photography.png";
+import Sport from "/src/assets/categoryImg/Sport.png";
+import Utility from "/src/assets/categoryImg/Utility.png";
+import Video from "/src/assets/categoryImg/Video.png";
+import VirtualWorlds from "/src/assets/categoryImg/VirtualWorlds.png";
 import { Link } from "react-router-dom";
 
 function BrowseCategoriesSection() {

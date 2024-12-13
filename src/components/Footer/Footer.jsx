@@ -2,8 +2,8 @@ import React from "react";
 import { BsShopWindow } from "react-icons/bs";
 import Links from "../links/Links";
 import { Link } from "react-router-dom";
-import Container from "../container/Container";
-import SubscribeForm from "../SubscribeForm/SubscribeForm";
+import Container from "/src/components/container/Container";
+import SubscribeForm from "/src/components/SubscribeForm/SubscribeForm";
 
 function Footer() {
   return (

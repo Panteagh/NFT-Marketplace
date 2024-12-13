@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import BorderedButton from "../BorderedButton/BorderedButton";
-import { getApi} from "../services/api";
-import ArtistCard from "../ArtistCard/ArtistCard";
+import BorderedButton from "/src/components/BorderedButton/BorderedButton";
+import { getApi} from "/src/components/services/api";
+import ArtistCard from "/src/components/ArtistCard/ArtistCard";
 import { Link } from "react-router-dom";
-import SectionHeadline from "../SectionHeadline/SectionHeadline";
+import SectionHeadline from "/src/components/SectionHeadline/SectionHeadline";
 
 function TopCreators() {
   const [artists, setArtists] = useState([]);

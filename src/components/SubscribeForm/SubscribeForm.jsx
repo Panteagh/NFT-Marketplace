@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "../inputs/Input";
-import Button from "../Button/Button";
+import Input from "/src/components/inputs/Input";
+import Button from "/src/components/Button/Button";
 
 function SubscribeForm({style}) {
   return (

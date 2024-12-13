@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Marketplace from "./pages/Marketplace/Marketplace";
-import Rankings from "./pages/Ranking/Rankings";
-import Wallet from "./pages/Wallet/Wallet";
-import Layout from "./components/Layout/Layout";
-import Login from "./pages/Login/login";
-import ArtistPage from "./pages/ArtistPage/ArtistPage";
-import NFTpage from "./pages/NFTpage/NFTpage";
-import {NFTMarketContextProvider} from "./components/Context/NFTMarketContext";
+import Home from "/src/pages/Home/Home";
+import Marketplace from "/src/pages/Marketplace/Marketplace";
+import Rankings from "/src/pages/Ranking/Rankings";
+import Wallet from "/src/pages/Wallet/Wallet";
+import Layout from "/src/components/Layout/Layout";
+import Login from "/src/pages/Login/login";
+import ArtistPage from "/src/pages/ArtistPage/ArtistPage";
+import NFTpage from "/src/pages/NFTpage/NFTpage";
+import {NFTMarketContextProvider} from "/src/components/Context/NFTMarketContext";
 
 function App() {
   return (

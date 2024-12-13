@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { getApi, getNftData } from "../../components/services/api";
+import { getApi, getNftData } from "/src/components/services/api";
 import { Link, useParams } from "react-router-dom";
 import { PiCopy } from "react-icons/pi";
 import { BsPlusLg } from "react-icons/bs";
-import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
+import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketContext";
 
-import Header from "../../assets/images/HeaderCreatorPage.png";
-import ArtistState from "../../components/ArtistState/ArtistState";
-import Links from "../../components/links/Links";
-import Button from "../../components/Button/Button";
-import BorderedButton from "../../components/BorderedButton/BorderedButton";
-import NFTCard from "../../components/NFTCard/NFTCard";
+import Header from "/src/assets/images/HeaderCreatorPage.png";
+import ArtistState from "/src/components/ArtistState/ArtistState";
+import Links from "/src/components/links/Links";
+import Button from "/src/components/Button/Button";
+import BorderedButton from "/src/components/BorderedButton/BorderedButton";
+import NFTCard from "/src/components/NFTCard/NFTCard";
 
 function ArtistPage() {
   const { CopyArtistLink, followHandler, isFollow, handelScrolling } =

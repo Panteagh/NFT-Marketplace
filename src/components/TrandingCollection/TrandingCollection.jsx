@@ -1,18 +1,18 @@
 import React from "react";
-import Collection from "../Collection/Collection";
-import SectionHeadline from "../SectionHeadline/SectionHeadline";
-import PsychoDog from "../../assets/images/PsychoDog.png";
-import CatFromFuture from "../../assets/images/CatFromFuture.png";
-import DesignerBear from "../../assets/images/DesignerBear.png";
-import MagicMushroom0324 from "../../assets/images/MagicMushroom0324.png";
-import MagicMushroom0325 from "../../assets/images/MagicMushroom0325.png";
-import DancingRobot0512 from "../../assets/images/DancingRobot0512.png";
-import DancingRobot0375 from "../../assets/images/DancingRobot0375.png";
-import DancingRobot0356 from "../../assets/images/DancingRobot0356.png";
-import mrFox from "../../assets/Avatars/mrFox.png";
-import Shroomie from "../../assets/Avatars/Shroomie.png";
-import BlueWhale from "../../assets/Avatars/BlueWhale.png";
-import Avatar from "../Avatar/Avatar";
+import Collection from "/src/components/Collection/Collection";
+import SectionHeadline from "/src/components/SectionHeadline/SectionHeadline";
+import PsychoDog from "/src/assets/images/PsychoDog.png";
+import CatFromFuture from "/src/assets/images/CatFromFuture.png";
+import DesignerBear from "/src/assets/images/DesignerBear.png";
+import MagicMushroom0324 from "/src/assets/images/MagicMushroom0324.png";
+import MagicMushroom0325 from "/src/assets/images/MagicMushroom0325.png";
+import DancingRobot0512 from "/src/assets/images/DancingRobot0512.png";
+import DancingRobot0375 from "/src/assets/images/DancingRobot0375.png";
+import DancingRobot0356 from "/src/assets/images/DancingRobot0356.png";
+import mrFox from "/src/assets/Avatars/mrFox.png";
+import Shroomie from "/src/assets/Avatars/Shroomie.png";
+import BlueWhale from "/src/assets/Avatars/BlueWhale.png";
+import Avatar from "/src/components/Avatar/Avatar";
 
 function TrandingCollection() {
   return (

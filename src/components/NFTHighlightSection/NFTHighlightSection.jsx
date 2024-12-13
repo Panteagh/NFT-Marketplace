@@ -1,9 +1,9 @@
 import React from "react";
-import Avatar from "../Avatar/Avatar";
-import Button from "../Button/Button";
+import Avatar from "/src/components/Avatar/Avatar";
+import Button from "/src/components/Button/Button";
 import { IoEyeOutline } from "react-icons/io5";
-import img from "../../assets/Avatars/Shroomie.png";
-import CountdownTimer from "../CountdownTimer/CountdownTimer";
+import img from "/src/assets/Avatars/Shroomie.png";
+import CountdownTimer from "/src/components/CountdownTimer/CountdownTimer";
 import { Link } from "react-router-dom";
 
 function NFTHighlightSection() {

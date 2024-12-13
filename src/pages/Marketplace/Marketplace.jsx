@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getApi } from "../../components/services/api";
-import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
-import HeaderPage from "../../components/headerPages/HeaderPage";
-import Container from "../../components/container/Container";
-import NFTCard from "../../components/NFTCard/NFTCard";
+import { getApi } from "/src/components/services/api";
+import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketContext";
+import HeaderPage from "/src/components/headerPages/HeaderPage";
+import Container from "/src/components/container/Container";
+import NFTCard from "/src/components/NFTCard/NFTCard";
 
 function Marketplace() {
 

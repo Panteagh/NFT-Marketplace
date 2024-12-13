@@ -1,15 +1,15 @@
 import React from "react";
-import SectionHeadline from "../SectionHeadline/SectionHeadline";
-import NFTCard from "../NFTCard/NFTCard";
-import BorderedButton from "../BorderedButton/BorderedButton";
+import SectionHeadline from "/src/components/SectionHeadline/SectionHeadline";
+import NFTCard from "/src/components/NFTCard/NFTCard";
+import BorderedButton from "/src/components/BorderedButton/BorderedButton";
 import { IoEyeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import DistantGalaxy from "../../assets/images/DistantGalaxy.png"
-import LifeOnEdena from "../../assets/images/LifeOnEdena.png"
-import AstroFiction from "../../assets/images/AstroFiction.png"
-import DigiLab from "../../assets/Avatars/DigiLab.png"
-import Keepitreal from "../../assets/Avatars/Keepitreal.png"
-import Shroomie from "../../assets/Avatars/Shroomie.png"
+import DistantGalaxy from "/src/assets/images/DistantGalaxy.png"
+import LifeOnEdena from "/src/assets/images/LifeOnEdena.png"
+import AstroFiction from "/src/assets/images/AstroFiction.png"
+import DigiLab from "/src/assets/Avatars/DigiLab.png"
+import Keepitreal from "/src/assets/Avatars/Keepitreal.png"
+import Shroomie from "/src/assets/Avatars/Shroomie.png"
 
 function DiscoverMoreNFTsSection() {
   return (

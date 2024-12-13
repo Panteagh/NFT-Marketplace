@@ -2,11 +2,11 @@ import React from "react";
 import { LuUser2 } from "react-icons/lu";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
-import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
-import Button from "../../components/Button/Button";
-import Input from "../../components/inputs/Input";
-import HeaderPage from "../../components/headerPages/HeaderPage";
-import img from "../../assets/images/login.png";
+import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketContext";
+import Button from "/src/components/Button/Button";
+import Input from "/src/components/inputs/Input";
+import HeaderPage from "/src/components/headerPages/HeaderPage";
+import img from "/src/assets/images/login.png";
 
 function Login() {
 

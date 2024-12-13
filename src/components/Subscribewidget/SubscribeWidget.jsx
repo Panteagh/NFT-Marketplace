@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../../assets/images/photo.png";
-import SubscribeForm from "../SubscribeForm/SubscribeForm";
+import img from "/src/assets/images/photo.png";
+import SubscribeForm from "/src/components/SubscribeForm/SubscribeForm";
 
 function SubscribeWidget() {
   return (

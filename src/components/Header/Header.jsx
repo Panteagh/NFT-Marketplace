@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../Button/Button";
+import Button from "/src/components/Button/Button";
 import { PiRocketLaunch } from "react-icons/pi";
-import assets from "../../assets/HeaderGif/hesder.gif";
+import assets from "/src/assets/HeaderGif/hesder.gif";
 import { Link } from "react-router-dom";
 
 function Header() {

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { getApi } from "../../components/services/api";
-import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
+import { getApi } from "/src/components/services/api";
+import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketContext";
 import { Link } from "react-router-dom";
-import HeaderPage from "../../components/headerPages/HeaderPage";
-import ArtistRankCard from "../../components/ArtistRankCard/ArtistRankCard";
-import Container from "../../components/container/Container";
+import HeaderPage from "/src/components/headerPages/HeaderPage";
+import ArtistRankCard from "/src/components/ArtistRankCard/ArtistRankCard";
+import Container from "/src/components/container/Container";
 
 function Rankings() {
   const [artistRank, setArtistRank] = useState([]);

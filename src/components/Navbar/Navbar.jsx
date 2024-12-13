@@ -1,8 +1,8 @@
 import { BsShopWindow } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar/Sidebar";
-import NavbarMenu from "../NavbarMenu/NavbarMenu";
-import { useNftMarketPlaceContext } from "../Context/NFTMarketContext";
+import Sidebar from "/src/components/Sidebar/Sidebar";
+import NavbarMenu from "/src/components/NavbarMenu/NavbarMenu";
+import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketContext";
 
 function Navbar() {
   const { isOpen, toggelMenu } = useNftMarketPlaceContext();

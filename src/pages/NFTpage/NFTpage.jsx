@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getApi, getNftData } from "../../components/services/api";
+import { getApi, getNftData } from "/src/components/services/api";
 import { CiGlobe } from "react-icons/ci";
 import { GoArrowRight } from "react-icons/go";
-import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
-import Tag from "../../components/Tag/Tag";
-import CountdownTimer from "../../components/CountdownTimer/CountdownTimer";
-import Button from "../../components/Button/Button";
-import SectionHeadline from "../../components/SectionHeadline/SectionHeadline";
-import BorderedButton from "../../components/BorderedButton/BorderedButton";
-import NFTCard from "../../components/NFTCard/NFTCard";
+import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketContext";
+import Tag from "/src/components/Tag/Tag";
+import CountdownTimer from "/src/components/CountdownTimer/CountdownTimer";
+import Button from "/src/components/Button/Button";
+import SectionHeadline from "/src/components/SectionHeadline/SectionHeadline";
+import BorderedButton from "/src/components/BorderedButton/BorderedButton";
+import NFTCard from "/src/components/NFTCard/NFTCard";
 
 function NFTpage() {
   const { handelScrolling } = useNftMarketPlaceContext();

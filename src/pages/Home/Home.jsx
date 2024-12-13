@@ -1,13 +1,13 @@
 import React from "react";
-import Container from "../../components/container/Container";
-import Header from "../../components/Header/Header";
-import TrandingCollection from "../../components/TrandingCollection/TrandingCollection";
-import TopCreators from "../../components/TopCreators/TopCreators";
-import BrowseCategoriesSection from "../../components/BrowseCategoriesSection/BrowseCategoriesSection";
-import DiscoverMoreNFTsSection from "../../components/DiscoverMoreNFTsSection/DiscoverMoreNFTsSection";
-import NFTHighlightSection from "../../components/NFTHighlightSection/NFTHighlightSection";
-import HowitworksSection from "../../components/HowitworksSection/HowitworksSection";
-import SubscribeWidget from "../../components/Subscribewidget/SubscribeWidget";
+import Container from "/src/components/container/Container";
+import Header from "/src/components/Header/Header";
+import TrandingCollection from "/src/components/TrandingCollection/TrandingCollection";
+import TopCreators from "/src/components/TopCreators/TopCreators";
+import BrowseCategoriesSection from "/src/components/BrowseCategoriesSection/BrowseCategoriesSection";
+import DiscoverMoreNFTsSection from "/src/components/DiscoverMoreNFTsSection/DiscoverMoreNFTsSection";
+import NFTHighlightSection from "/src/components/NFTHighlightSection/NFTHighlightSection";
+import HowitworksSection from "/src/components/HowitworksSection/HowitworksSection";
+import SubscribeWidget from "/src/components/Subscribewidget/SubscribeWidget";
 
 function Home() {
   return (

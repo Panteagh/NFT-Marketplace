@@ -1,8 +1,8 @@
 import React from "react";
-import { useNftMarketPlaceContext } from "../../components/Context/NFTMarketContext";
-import HeaderPage from "../../components/headerPages/HeaderPage";
-import WalletOptionsButton from "../../components/WalletOptionsButton/WalletOptionsButton";
-import img from "../../assets/images/Wallet.png";
+import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketContext";
+import HeaderPage from "/src/components/headerPages/HeaderPage";
+import WalletOptionsButton from "/src/components/WalletOptionsButton/WalletOptionsButton";
+import img from "/src/assets/images/Wallet.png";
 
 function Wallet() {
 
