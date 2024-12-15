@@ -56,7 +56,8 @@ function Footer() {
               Get exclusive promotions & updates straight to your inbox.
             </p>
 
-            <SubscribeForm />
+            <SubscribeForm label="Enter your email here"
+            />
           </div>
         </div>
       </Container>

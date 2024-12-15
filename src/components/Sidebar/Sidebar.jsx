@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Button from "/src/components/Button/Button";
 import { GoPerson } from "react-icons/go";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <div
-      className={`fixed top-0 right-0 w-64 bg-[#353434] h-full shadow-lg transform ${
+      className={`fixed z-50 top-0 right-0 w-64 bg-[#353434] h-full shadow-lg transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out md:hidden`}
     >
@@ -31,7 +31,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 
         <Link to="/login">
           <Button
-            style="w-full text-white my-9"
+            style="w-full text-white font-serif my-9"
             icon={<GoPerson />}
             label="Sign Up"
           />

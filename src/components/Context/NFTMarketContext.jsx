@@ -39,7 +39,9 @@ export function NFTMarketContextProvider({ children }) {
 
   }
 
-  return (
+  const [inputValue , setInputValue] = useState()
+
+    return (
     <NftMarketPlaceContext.Provider
       value={{
         CopyArtistLink,
@@ -47,7 +49,8 @@ export function NFTMarketContextProvider({ children }) {
         isFollow,
         isOpen,
         toggelMenu,
-        handelScrolling
+        handelScrolling,
+        inputValue
       }}
     >
       {children}

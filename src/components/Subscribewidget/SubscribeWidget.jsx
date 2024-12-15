@@ -1,5 +1,5 @@
 import React from "react";
-import img from "/src/assets/images/photo.png";
+import img from "/src/assets/images/Photo.png";
 import SubscribeForm from "/src/components/SubscribeForm/SubscribeForm";
 
 function SubscribeWidget() {
@@ -17,7 +17,8 @@ function SubscribeWidget() {
             <p className="text-white text-2xl  max-md:text-base mt-7 max-md:mt-4">
               Get exclusive promotions & updates straight to your inbox.
             </p>
-            <SubscribeForm />
+            <SubscribeForm label="Enter your email here"
+            />
           </div>
         </div>
       </div>

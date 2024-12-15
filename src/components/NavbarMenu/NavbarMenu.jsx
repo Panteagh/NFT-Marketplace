@@ -21,7 +21,7 @@ const NavbarMenu = () => {
       </ul>
 
       <Link to="/login">
-        <Button style="w-32 text-white" icon={<GoPerson />} label="Sign Up" />
+        <Button style="w-32 text-white font-serif" icon={<GoPerson />} label="Sign Up" />
       </Link>
     </div>
   );
