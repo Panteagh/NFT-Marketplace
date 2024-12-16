@@ -1,7 +1,6 @@
-import axios, { Axios } from "axios";
 
 const client = axios.create({
-    baseURL :"http://localhost:3000"
+    baseURL :"https://json-server-vercel-rosy-gamma.vercel.app"
 })
 
 export async function getApi(){
@@ -13,3 +12,4 @@ export async function getNftData(id){
      const {data} = await client(`/NFTsAPI/${id}`)
      return data
 }
+
