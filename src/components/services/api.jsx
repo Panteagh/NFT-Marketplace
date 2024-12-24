@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const client = axios.create({
-    baseURL :"https://json-server-vercel-rosy-gamma.vercel.app"
+    baseURL :"https://json-server-vercel-kappa-plum.vercel.app"
 })
 
 export async function getApi(){
