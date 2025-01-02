@@ -5,14 +5,17 @@ import { Link } from "react-router-dom";
 import HeaderPage from "/src/components/headerPages/HeaderPage";
 import ArtistRankCard from "/src/components/ArtistRankCard/ArtistRankCard";
 import Container from "/src/components/container/Container";
+import ListSkeleton from "../../components/ListSkeleton/ListSkeleton";
 
 function Rankings() {
   const [artistRank, setArtistRank] = useState([]);
-  const { handelScrolling } = useNftMarketPlaceContext();
+  const { handelScrolling , isLoading , setIsLoading} = useNftMarketPlaceContext();
 
   useEffect(() => {
+    setIsLoading(true)
     getApi().then((res) => {
       setArtistRank(res);
+      setIsLoading(false)
         });
   }, []);
   
@@ -35,14 +38,22 @@ function Rankings() {
             <label className="basis-40 ">Volume</label>
           </div>
         </div>
-
-        <div className="mt-8 mb-11">
+        <div>
+          {
+            isLoading ? 
+            <ListSkeleton  /> 
+            : 
+             <div className="mt-8 mb-11">
           {artistRank.map((item) => (
             <Link key={item.id} to={`/ArtistPage/${item.id}`}>
               <ArtistRankCard {...item} />
             </Link>
           ))}
         </div>
+          } 
+        </div>
+
+        
       </Container>
     </div>
   );

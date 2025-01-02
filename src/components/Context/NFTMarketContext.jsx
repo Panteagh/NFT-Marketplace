@@ -38,6 +38,8 @@ export function NFTMarketContextProvider({ children }) {
     }, [location.pathname]);
   };
 
+  const [isLoading , setIsLoading] = useState(false)
+
 
   const [inputValue, setInputValue] = useState();
 
@@ -51,6 +53,8 @@ export function NFTMarketContextProvider({ children }) {
         toggelMenu,
         handelScrolling,
         inputValue,
+        setIsLoading,
+        isLoading
       }}
     >
       {children}

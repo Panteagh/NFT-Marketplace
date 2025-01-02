@@ -5,15 +5,18 @@ import { useNftMarketPlaceContext } from "/src/components/Context/NFTMarketConte
 import HeaderPage from "/src/components/headerPages/HeaderPage";
 import Container from "/src/components/container/Container";
 import NFTCard from "/src/components/NFTCard/NFTCard";
+import CardSkeleton from "../../components/CardSkeleton/CardSkeleton";
 
 function Marketplace() {
-
   const [nft, setNft] = useState([]);
-  const { handelScrolling } = useNftMarketPlaceContext();
+  const { handelScrolling, isLoading, setIsLoading } =
+    useNftMarketPlaceContext();
 
   useEffect(() => {
+    setIsLoading(true);
     getApi().then((res) => {
       setNft(res);
+      setIsLoading(false);
     });
   }, []);
 
@@ -27,12 +30,18 @@ function Marketplace() {
           description="Browse through more than 50k NFTs on the NFT Marketplace."
         />
 
-        <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6 mt-6">
-          {nft.map((item) => (
-            <Link key={item.id} to={`/NFTpage/${item.id}`}>
-              <NFTCard key={item.id} {...item} />
-            </Link>
-          ))}
+        <div>
+          {isLoading ? (
+            <CardSkeleton />
+          ) : (
+            <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6 mt-6">
+              {nft.map((item) => (
+                <Link key={item.id} to={`/NFTpage/${item.id}`}>
+                  <NFTCard key={item.id} {...item} />
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </Container>
     </div>

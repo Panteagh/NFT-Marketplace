@@ -11,27 +11,32 @@ import SectionHeadline from "/src/components/SectionHeadline/SectionHeadline";
 import BorderedButton from "/src/components/BorderedButton/BorderedButton";
 import NFTCard from "/src/components/NFTCard/NFTCard";
 import { BASE_URL } from "../../components/services/api";
+import CardSkeleton from "../../components/CardSkeleton/CardSkeleton";
 
 function NFTpage() {
-  const { handelScrolling } = useNftMarketPlaceContext();
+  const { handelScrolling, isLoading, setIsLoading } =
+    useNftMarketPlaceContext();
   const { id } = useParams();
   const [NftData, setNftData] = useState({});
   const [Nfts, setNfts] = useState([]);
 
   useEffect(() => {
+    setIsLoading(true);
     getNftData(id).then((res) => {
       setNftData(res);
+      setIsLoading(false);
     });
 
     getApi().then((result) => {
       setNfts(result);
+      setIsLoading(false);
     });
   }, [id]);
 
   handelScrolling();
 
   const NftCards = useMemo(
-    () => 
+    () =>
       Nfts.map((item) => (
         <Link key={item.id} to={`/NFTpage/${item.id}`}>
           <NFTCard key={item.id} {...item} />
@@ -59,9 +64,9 @@ function NFTpage() {
               initialSeconds={59}
               button={
                 <Link to="/Wallet">
-                <Button
-                  label="Place Bid"
-                  style="bg-[#A259FF] min-w-[150px] h-[60px] mt-5"
+                  <Button
+                    label="Place Bid"
+                    style="bg-[#A259FF] min-w-[150px] h-[60px] mt-5"
                   />
                 </Link>
               }
@@ -166,8 +171,14 @@ function NFTpage() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6 mt-6">
-            {NftCards}
+          <div>
+            {isLoading ? (
+              <CardSkeleton />
+            ) : (
+              <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mx-auto gap-x-6 mt-6">
+                {NftCards}
+              </div>
+            )}
           </div>
         </div>
       </div>
