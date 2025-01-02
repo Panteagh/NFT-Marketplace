@@ -16,20 +16,20 @@ const Sidebar = ({ isOpen, toggle }) => {
 
       <div className="flex flex-col-reverse justify-center items-center mt-10">
         <ul className="flex flex-col-reverse justify-center items-center list-none gap-16 font-medium text-base text-white font-serif NavbarRes ">
-          <Link to="/Marketplace">
-            <li className="hover:scale-95 duration-700">Marketplace</li>
+          <Link to="/Marketplace" onClick={toggle}>
+            <li className="hover:scale-95 duration-700" >Marketplace</li>
           </Link>
 
-          <Link to="/Rankings">
+          <Link to="/Rankings" onClick={toggle}>
             <li className="hover:scale-95 duration-700">Rankings</li>
           </Link>
 
-          <Link to="/Wallet">
+          <Link to="/Wallet" onClick={toggle}>
             <li className="hover:scale-95 duration-700">Connect a wallet</li>
           </Link>
         </ul>
 
-        <Link to="/login">
+        <Link to="/login" onClick={toggle}>
           <Button
             style="w-full text-white font-serif my-9"
             icon={<GoPerson />}

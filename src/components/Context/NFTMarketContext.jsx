@@ -54,7 +54,6 @@ export function NFTMarketContextProvider({ children }) {
         handelScrolling,
         inputValue,
         setIsLoading,
-        isLoading
       }}
     >
       {children}

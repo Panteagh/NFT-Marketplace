@@ -15,11 +15,7 @@ export default {
       'lg': '1440px',
 
     },
-    extend: {
-      backgroundImage: {
-        'custom-bg': "url('src/assets/images/NFTHighlight.png')",
-      },
-    },
+    
     plugins: [],
   }
 }

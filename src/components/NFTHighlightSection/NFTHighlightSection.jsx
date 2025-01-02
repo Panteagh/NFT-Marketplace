@@ -1,14 +1,16 @@
 import React from "react";
 import Avatar from "/src/components/Avatar/Avatar";
 import Button from "/src/components/Button/Button";
-import { IoEyeOutline } from "react-icons/io5";
 import img from "/src/assets/Avatars/Shroomie.png";
 import CountdownTimer from "/src/components/CountdownTimer/CountdownTimer";
+import bgImage from "/src/assets/images/NFTHighlight.png";
+import { IoEyeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 function NFTHighlightSection() {
   return (
-    <div className="min-w-full h-[640px] bg-custom-bg bg-no-repeat bg-cover relative mb-4 ">
+    <div className="min-w-full h-[640px] relative mb-4 ">
+      <img className="w-full h-full -z-0 object-cover " src={bgImage}  alt="" />
       <div className="absolute top-[222px] left-[184px] md:left-16 max-md:left-16 mx-16 max-md:mx-auto">
         <Link to={`/ArtistPage/${7}`}>
           <div className="rounded-3xl bg-[#3B3B3B] flex gap-2 w-[151px] h-[44px] justify-center items-center hover:scale-95 duration-700">
