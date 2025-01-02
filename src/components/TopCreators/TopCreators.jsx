@@ -25,7 +25,7 @@ function TopCreators() {
         <div className=" max-md:hidden">
         <Link to="/Rankings">
           <BorderedButton
-            style="w-[247px] mt-8 "
+            style="w-[247px] mt-8  "
             icon={<HiOutlineRocketLaunch color="#A259FF" />}
             label="View Rankings"
           />
@@ -42,6 +42,15 @@ function TopCreators() {
         ))}
 
       </div>
+      <div className="md:hidden">
+        <Link to="/Rankings">
+          <BorderedButton
+            style="max-md:w-full mt-8  "
+            icon={<HiOutlineRocketLaunch color="#A259FF" />}
+            label="View Rankings"
+          />
+        </Link>
+        </div>
     </div>
   );
 }

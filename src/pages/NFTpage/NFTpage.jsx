@@ -180,6 +180,16 @@ function NFTpage() {
               </div>
             )}
           </div>
+
+          <div>
+          <Link to={`/ArtistPage/${id}`}>
+              <BorderedButton
+                style="max-md:w-full mb-6 md:hidden mr-24"
+                label="Go To Artist Page"
+                icon={<GoArrowRight color="#A259FF" />}
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </>

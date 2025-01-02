@@ -20,7 +20,7 @@ function DiscoverMoreNFTsSection() {
         description="Explore new trending NFTs"
       />
       <Link to="/Marketplace">
-    <BorderedButton style="w-[167px] h-[60px] max-sm:hidden" icon={<IoEyeOutline color="#A259FF"/>} label="See All"/>
+    <BorderedButton style="w-[167px] h-[60px] max-md:hidden" icon={<IoEyeOutline color="#A259FF"/>} label="See All"/>
       </Link>
         </div>
       <div className="mt-12 grid grid-cols-3 max-lg:grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1" >
@@ -35,6 +35,11 @@ function DiscoverMoreNFTsSection() {
         <Link to={`/NFTpage/${3}`}>
         <NFTCard style="max-md:hidden" NFTname="AstroFiction" trandingNFTsImg={AstroFiction} trandingNFTsAvatr={Shroomie} Artistname="Spaceone"/>
         </Link>
+      </div>
+      <div>
+      <Link to="/Marketplace">
+    <BorderedButton style="max-md:w-full h-[60px] md:hidden" icon={<IoEyeOutline color="#A259FF"/>} label="See All"/>
+      </Link>
       </div>
     </div>
   );
