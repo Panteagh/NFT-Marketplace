@@ -7,7 +7,7 @@ import SubscribeForm from "/src/components/SubscribeForm/SubscribeForm";
 
 function Footer() {
   return (
-    <div className="bg-[#3B3B3B] h-auto py-2 max-sm:px-4">
+    <div className="bg-[#3B3B3B] h-auto py-2 pb-8 max-sm:px-4">
       <Container>
         <div className="lg:flex max-md:flex-col max-md:text-left justify-between lg:mx-36 text-[#858584] space font-sans">
           <div>

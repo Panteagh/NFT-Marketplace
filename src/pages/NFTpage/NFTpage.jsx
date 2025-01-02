@@ -10,6 +10,7 @@ import Button from "/src/components/Button/Button";
 import SectionHeadline from "/src/components/SectionHeadline/SectionHeadline";
 import BorderedButton from "/src/components/BorderedButton/BorderedButton";
 import NFTCard from "/src/components/NFTCard/NFTCard";
+import { BASE_URL } from "../../components/services/api";
 
 function NFTpage() {
   const { handelScrolling } = useNftMarketPlaceContext();
@@ -25,12 +26,12 @@ function NFTpage() {
     getApi().then((result) => {
       setNfts(result);
     });
-  }, [Nfts]);
+  }, [id]);
 
   handelScrolling();
 
   const NftCards = useMemo(
-    () =>
+    () => 
       Nfts.map((item) => (
         <Link key={item.id} to={`/NFTpage/${item.id}`}>
           <NFTCard key={item.id} {...item} />
@@ -43,8 +44,8 @@ function NFTpage() {
     <>
       <div className="md:px-44">
         <img
-          className="w-full md:h-[560px] max-md:h-[420px] max-sm:h-80"
-          src={NftData.NFTimg}
+          className="w-full md:h-[560px] max-md:h-[420px] max-sm:h-80 object-cover"
+          src={BASE_URL + NftData.NFTimg}
           loading="lazy"
         />
       </div>
@@ -85,7 +86,7 @@ function NFTpage() {
                 <div className="flex gap-4 items-center mt-4 hover:scale-95 duration-700">
                   <img
                     className="w-6 h-6 rounded-s-full"
-                    src={NftData.Avatar}
+                    src={BASE_URL + NftData.Avatar}
                   />
                   <h3 className="text-white font-mono text-xl max-md:text-sm ">
                     {NftData.Artistname}

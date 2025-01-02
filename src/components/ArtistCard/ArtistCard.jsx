@@ -1,4 +1,5 @@
 import React from "react";
+import { BASE_URL } from "../services/api";
 
 function ArtistCard({ id, name, Avatar }) {
   return (
@@ -10,7 +11,7 @@ function ArtistCard({ id, name, Avatar }) {
       <div className="flex lg:flex-col md:flex-row justify-center items-center md:mt-4 sm:p-4 max-sm:gap-3 max-sm:mt-3">
         <img
           className="rounded-full lg:mt-5 lg:w-[110px] lg:h-[115px] md:w-[60px] md:h-[60px] max-md:w-[60px] max-md:h-[60px] max-sm:w-[60px] max-sm:h-[60px] md:mr-4 sm:mr-5 max-sm:mt-5"
-          src={Avatar}
+          src={BASE_URL + Avatar}
         />
 
         <div>

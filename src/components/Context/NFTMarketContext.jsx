@@ -30,18 +30,18 @@ export function NFTMarketContextProvider({ children }) {
     setIsFollow(!isFollow);
   };
 
-  const handelScrolling = () =>{
-    const location = useLocation()
+  const handelScrolling = () => {
+    const location = useLocation();
 
-    useEffect(()=>{
-      window.scrollTo(0,0)
-    } ,[location.pathname])
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location.pathname]);
+  };
 
-  }
 
-  const [inputValue , setInputValue] = useState()
+  const [inputValue, setInputValue] = useState();
 
-    return (
+  return (
     <NftMarketPlaceContext.Provider
       value={{
         CopyArtistLink,
@@ -50,7 +50,7 @@ export function NFTMarketContextProvider({ children }) {
         isOpen,
         toggelMenu,
         handelScrolling,
-        inputValue
+        inputValue,
       }}
     >
       {children}

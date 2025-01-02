@@ -25,15 +25,15 @@ function DiscoverMoreNFTsSection() {
         </div>
       <div className="mt-12 grid grid-cols-3 max-lg:grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1" >
         <Link to={`/NFTpage/${6}`} >
-        <NFTCard NFTimg={DistantGalaxy} NFTname="Distant Galaxy" Avatar={DigiLab}  Artistname="MoonDancer"/>
+        <NFTCard trandingNFTsImg={DistantGalaxy} NFTname="Distant Galaxy" trandingNFTsAvatr={DigiLab}  Artistname="MoonDancer"/>
         </Link>
 
         <Link to={`/NFTpage/${12}`}>
-        <NFTCard NFTimg={LifeOnEdena} NFTname="Life On Edena Galaxy" Avatar={Keepitreal} Artistname="NebulaKid"/>
+        <NFTCard trandingNFTsImg={LifeOnEdena} NFTname="Life On Edena Galaxy" trandingNFTsAvatr={Keepitreal} Artistname="NebulaKid"/>
         </Link>
 
         <Link to={`/NFTpage/${3}`}>
-        <NFTCard style="max-md:hidden" NFTname="AstroFiction" NFTimg={AstroFiction} Avatar={Shroomie} Artistname="Spaceone"/>
+        <NFTCard style="max-md:hidden" NFTname="AstroFiction" trandingNFTsImg={AstroFiction} trandingNFTsAvatr={Shroomie} Artistname="Spaceone"/>
         </Link>
       </div>
     </div>

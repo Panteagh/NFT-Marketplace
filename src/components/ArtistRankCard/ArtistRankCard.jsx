@@ -1,4 +1,5 @@
 import React from "react";
+import { BASE_URL } from "../services/api";
 
 function ArtistRankCard({ id, Avatar, Artistname }) {
   return (
@@ -12,7 +13,7 @@ function ArtistRankCard({ id, Avatar, Artistname }) {
         <div className="flex gap-6 max-md:gap-4 justify-center items-center basis-[360px] text-left lg:mt-3 max-lg:mt2 max-md:mt-0">
           <img
             className="lg:w-[60px] lg:h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-md:w-12 max-md:h-12  max-lg:my-3 max-md:my-1 basis-[60px]"
-            src={Avatar}
+            src={BASE_URL + Avatar}
           />
 
           <h2 className="text-white text-left basis-[300px] text-2xl font-bold max-md:text-sm">

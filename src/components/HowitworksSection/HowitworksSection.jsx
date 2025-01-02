@@ -11,7 +11,7 @@ function HowitworksSection() {
       <SectionHeadline sectionLabel="How it works" 
       description="Find out how to get started"
       />
-      <div className='grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-3 mt-12'>
+      <div className='grid grid-cols-3  max-md:grid-cols-1 gap-3 mt-12'>
       
       <InfoCard img={icon1} label="Setup Your wallet" description="Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner."/>
       <InfoCard img={icon2} label="Create Collection" description="Upload your work and setup your collection. Add a description, social links and floor price."/>

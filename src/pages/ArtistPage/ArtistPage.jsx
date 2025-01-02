@@ -11,6 +11,7 @@ import Links from "/src/components/links/Links";
 import Button from "/src/components/Button/Button";
 import BorderedButton from "/src/components/BorderedButton/BorderedButton";
 import NFTCard from "/src/components/NFTCard/NFTCard";
+import { BASE_URL } from "../../components/services/api";
 
 function ArtistPage() {
   const { CopyArtistLink, followHandler, isFollow, handelScrolling } =
@@ -42,7 +43,7 @@ function ArtistPage() {
         />
 
         <div className="w-32 h-32 rounded-lg absolute bottom-[-55px] left-28 max-sm:left-1/3 max-sm:right-1/3">
-          <img src={creatorData.Avatar} />
+          <img src={BASE_URL + creatorData.Avatar} />
         </div>
 
       </div>

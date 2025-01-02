@@ -13,9 +13,9 @@ function Rankings() {
   useEffect(() => {
     getApi().then((res) => {
       setArtistRank(res);
-    });
+        });
   }, []);
-
+  
   handelScrolling();
 
   return (

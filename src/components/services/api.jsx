@@ -1,7 +1,9 @@
 import axios from "axios"
 
+export const BASE_URL=import.meta.env.VITE_BASE_URL
+
 const client = axios.create({
-    baseURL :"https://json-server-vercel-kappa-plum.vercel.app"
+    baseURL: BASE_URL
 })
 
 export async function getApi(){
