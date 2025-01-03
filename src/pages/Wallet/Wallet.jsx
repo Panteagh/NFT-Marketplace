@@ -15,7 +15,7 @@ function Wallet() {
         <img className="w-full max-md:h-56 object-cover" src={img} />
       </div>
 
-      <div className="max-md:mx-auto mx-5 ">
+      <div className="max-md:mx-auto mx-5 max-md:px-11">
         <HeaderPage
           PageHeader="Connect wallet"
           description="Choose a wallet you want to connect. There are several wallet providers."
