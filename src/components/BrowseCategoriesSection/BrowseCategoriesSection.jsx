@@ -16,7 +16,7 @@ function BrowseCategoriesSection() {
     <div className="lg:mx-36 mt-20 mb-10">
       <SectionHeadline sectionLabel="Browse Categories" />
 
-      <div className=" grid lg:grid-cols-4 md:grid-cols-3 max-md:gap-3 sm:grid-cols-2 max-sm:grid-cols-2 gap-5 mt-8">
+      <div className=" grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-2 gap-11 mt-8">
         <Link to="/Marketplace">
           <CategoryCard img={Art} CategoryName="Art" />
         </Link>
